@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>How do I know if I really need object oriented programming?</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://unixsheikh.com/feed.rss">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="../includes/css/stylesheet.css">
+</head>
+<body>
+<header>
+<nav>[ <a class="nav-btn" href="../">Home</a> • <a class="nav-btn" href="../about.html">About</a> • <a class="nav-btn" href="../faq.html">FAQ</a> • <a class="nav-btn" href="../hire-me.html">Hire me</a> • <a class="nav-btn" href="../contact.html">Contact</a> • <a class="nav-btn rss" href="../feed.rss">RSS</a> • <a class="nav-btn" href="../tutorials.html">Tutorials only</a> • <a class="nav-btn" href="../articles.html">Articles only</a> ]</nav>
+</header>
+<article>
+
+<h1>How do I know if I really need object oriented programming?</h1>
+<p class="post-data">Published on <span id="pubdate">2021-03-30</span>.</p>
+<p class="info info-yellow abstract">It's easy to determine if you really need the object oriented paradigm, you just need to look for the things that you can only do with object oriented programming and then ask yourself whether you really need that. It's called "The Three Pillars of Object-Oriented Programming". If you don't use all three at the same time, then you're not doing object oriented programming and you don't need it.</p>
+
+<p>The "three pillars" of object oriented programming are:</p>
+
+<ul>
+    <li>Encapsulation</li>
+    <li>Inheritance</li>
+    <li>Polymorphism</li>
+</ul>
+
+<p>The usage of encapsulation alone, i.e., defining and using classes, but making no use of either inheritance or polymorphism, is referred to as "object based programming", it is not truly "object oriented programming", you need to be using all three of the pillars.
+
+</p><h2>Encapsulation</h2>
+
+<p>In general the term "encapsulation" refers to the placing data and functions within a class. You "encapsulate", i.e. wrap, the data and the functions.</p>
+
+<p>The result is that you have implemented the conceptual notion of "an abstract data type" and "data hiding".</p>
+
+<h2>Inheritance</h2>
+
+<p>Inheritance is the mechanism by which one class "inherits" the properties and methods of another class.</p>
+
+<p>This is in contrast to copying and pasting code from one function into another because you need the same basic functionality, yet at the same time you need to expand the second function with further capabilities.</p>
+
+<p>In programming you should avoid <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">repeating yourself</a>. The way it is handled correctly in procedural programming is to split up the functions into smaller pieces and then pass the result of the first function into a variable or an array and then pass that into the new function. You generally want to avoid calling one function from within another.</p>
+
+<p>In object oriented programming you can do inheritance.</p>
+
+<h2>Polymorphism</h2>
+
+<p>Polymorphism (Greek for "many forms") refers to the ability where methods from various classes do similar things and therefore should have similar names. Polymorphism is essentially a solution that enables numerous classes with different functionalities to execute or share a common interface.</p>
+
+<p>We use an "interface" when we want to implement polymorphism. An interface is similar to a class except that it cannot contain code. An interface is like a blueprint for other classes. We define method names and arguments in the interface class, but not the contents of the methods. The classes that then executes the interface MUST execute all methods characterized by the interface.</p>
+
+<h2>Do you need any of that?</h2>
+
+<p>If you don't need the three pillars of object oriented programming, then there is no reason to roll out an object oriented setup.</p>
+
+<p>If you are just using classes without implementing these three features, then you are actually just doing procedural programming, only with classes to encapsulate your functions. That's fine, nothing wrong with that, you just need to know that you're not doing object oriented programming and you can stop worrying about it.</p>
+
+</article>
+<footer><i>If you have any comments or corrections please feel free to email them to me. Also, if you found this content useful consider supporting me on <a href="https://patreon.com/unixsheikh">Patreon</a></i> ;)</footer>
+</body>
+</html>

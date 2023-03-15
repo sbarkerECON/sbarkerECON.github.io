@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>No more object oriented programming with PHP</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://unixsheikh.com/feed.rss">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="../includes/css/stylesheet.css">
+</head>
+<body>
+<header>
+<nav>[ <a class="nav-btn" href="../">Home</a> • <a class="nav-btn" href="../about.html">About</a> • <a class="nav-btn" href="../faq.html">FAQ</a> • <a class="nav-btn" href="../hire-me.html">Hire me</a> • <a class="nav-btn" href="../contact.html">Contact</a> • <a class="nav-btn rss" href="../feed.rss">RSS</a> • <a class="nav-btn" href="../tutorials.html">Tutorials only</a> • <a class="nav-btn" href="../articles.html">Articles only</a> ]</nav>
+</header>
+<article>
+
+<h1>No more object oriented programming with PHP</h1>
+<p class="post-data">Published on <span id="pubdate">2021-03-27</span>. Modified on 2021-03-28.</p>
+<p class="info info-yellow abstract">It has happened again! Another company has contacted me because they had a product developed which has now turned into a huge beast of complexity. Even basic functionality has stopped working and nobody wants to have anything to do with it. It has devastating consequences for the company because they are loosing customers every single day. I have come to the same conclusion, which I have reached in several other similar situations, the codebase is one big pile of complex object oriented mess.</p>
+
+<p>The problem is that too much PHP software is being developed with all the OO design principles and all the design patterns theory, that still permeates the industry like it was carved in stone, and then combined with a major front controller piece of junk (but very popular) framework. The problem that the software is supposed to solve takes a backseat to all this bullshit. The focus has not been on the problem, the focus has been on OO theory and principles.</p>
+
+<p>And now we have yet another company that is suffering tremendous loss because some irresponsible or ignorant developer(s) jumped on the hype train.</p>
+
+<p>With the advent of <a href="https://www.php.net/manual/en/language.types.declarations.php#language.types.declarations.strict">strict typing</a> in PHP I have decided to leave object oriented programming behind when doing projects in PHP - even when we work in larger teams.</p>
+
+<p>While I certainly can see and do value some of the benefits that object oriented theory brings to the table, it's usefulness is highly overrated and hyped up and I believe that a lot of the concepts and rules you have to follow also adds a lot of unnecessary complexity as soon as the application begins to grow.</p>
+
+<p>I think that what happened in PHP land, and also in the major other parts of the industry, was that a lot of people back in the days wrote really horrible procedural code, really bad spaghetti code. PHP was very easy to learn and suddenly everyone was making horribly insecure and poorly designed web applications. When the concepts of OOP was introduced into PHP it presented a new way of organizing code which helped people improve the code structure. But then came the corporate OOP hype machine! It blew everything totally out of proportions and even the academic circles got infused with this new mental model, that procedural is messy and object oriented is much better. But the underlying problem was never the procedural paradigm, the underlying problem was poor programming skills, lack of experience and a general lack of basic understanding of how to do it right.</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Joe_Armstrong_%28programmer%29">Joe Armstrong</a>, the inventor of <a href="https://en.wikipedia.org/wiki/Erlang_%28programming_language%29">Erlang</a>, says it well his famous article <a href="http://harmful.cat-v.org/software/OO_programming/why_oo_sucks">Why OO sucks</a>:</p>
+
+<blockquote>If a language technology is so bad that it creates a new industry to solve problems of its own making then it must be a good idea for the guys who want to make money. This is is the real driving force behind OOPs.</blockquote>
+
+<p><strong>There is absolutely no objective evidence that OOP is better in any way than procedural programming.</strong></p>
+
+<p>People always bring up the old song that, "global state is bad!", "and you need to hide your properties!", and bla bla bla.</p>
+
+<p>Most developers use the terms "global state", "global variable" or "global" interchangeably, but what we need to focus on is "global mutable state". Global mutable state is the state in which e.g. a variable can be modified (i.e. mutable) in the biggest scope of the application, and this is what needs to be avoided as much as possible.</p>
+
+<p>The advertised benefits by object oriented fanatics is ridiculous because OOP brings so much added complexity that in order to really truly make good use of it, you end up with such mess that you cannot navigate the codebase without the help of a sophisticated IDE! Class A depends on Class B which depends on Class C which depends on class D, etc. and after 271 dependencies you can finally print "Hello world" on the screen.</p>
+
+<p><strong>Let me tell you something. If you depend on an IDE to make heads or tails out of your code, then you know you're dealing with mess.</strong></p>
+
+<p>There is nothing wrong in using an IDE or getting help from it, on the contrary it can save you a lot of time, but if you cannot code a project with a simple text editor, then that is evidence that you're working on something that is put together in a complex way.</p>
+
+<p>The Linux kernel, the BSD operating systems, all these projects are done in procedural C. And you know what? Most of the skilled coders that work on these huge projects use really simple console based text editors. They do not depend on modern IDEs to help them navigate the code because they don't need to. And that's not because these codebases are small.</p>
+
+<p>You need to be able to keep a mental picture of the project in your mind and navigate and work like an old-school taxi driver who can navigate a big city almost blind folded (without a GPS!).</p>
+
+<p>Code should always be readable and well structured, it doesn't matter what paradigm we're dealing with, and it should always be very well documented, but code needs to fit in your brain, not in a OOP structure confined and limited by theories that never actually truly worked.</p>
+
+<p>And I have noticed a pattern. When working in projects with a procedural programming language people quickly begin to solve problems, right away. The creative process gets fired up and they try to find ways to fix problems and performance issues, and people tinker and improve, etc. They focus completely on the problems. However, when a project is done in an object oriented programming language, the development slows and almost grinds to a halt. People start succumbing to the theories of abstraction, encapsulation, and all the complexities of shared mutable objects and methods. A major part of the time is being wasted thinking about design patterns and all the other OOP crap instead of doing actual work.</p>
+
+<p>When we design and develop software, we need to write code that is easy to understand, code that is efficient and performant - especially nowadays - and code that is reliable. And the very best way to do that is to reduce code complexity. And absolutely nothing adds to code complexity as OOP concepts and implementations.</p>
+
+<p>I suspect that this is about the time when frantic OOP people reading this article start loosing it: "<i>But what about function name collisions?</i>", "<i>And what about framework dependencies?</i>", "<i>Procedural code IS spaghetti code!</i>", "<i>OOP is the modern way of doing things!</i>", "<i>Do you want to go back to the 90's?</i>", "<i>Then we have to build everything from scratch each time we do something!</i>" and "<i>Do you really want to explicitly load files and have a ton of include statements at the top of every file?</i>"</p>
+
+<p>Sigh!</p>
+
+<p>There is actually no consensus in the programming community about what features a language must have to be considered truly object oriented. This is a fact. However, as I mentioned in the beginning of the article, there are some good ideas and features in OOP, <strong>but these ideas can be implemented in a procedural programming language</strong>. Some languages makes it more difficult than others, but there is no reason why you shouldn't structure your code wisely in order to prevent errors and mistakes.</p>
+
+<p>The book referred to as <a href="https://en.wikipedia.org/wiki/Design_Patterns">The Gang of Four Book</a>, is a list of object oriented design patterns. The authors defines OOP this way:</p>
+
+<blockquote>Object-oriented programs are made up of objects. An object packages both data and the procedures that operate on that data. The procedures are typically called methods or operations.</blockquote>
+
+<p>Using this definition, even C is object oriented. C has structs and enums which have data. And C has blocks that provide functions that can work on structs and enums. But this is not called objects even though they provide the same basic functionality, according to the authors definition of objects.</p>
+
+<p>If you stick to good old and efficient procedural programming and combine that with the strict typing in PHP, and you avoid the well known and common problems with PHP and bad coding practices, you can become much more productive very fast because you no longer need to think about all the added complexity of OOP. You will be focused on solving problems!</p>
+
+<p>Some of the advantages of procedural programming is that the programs are straight forward with precise usage. The code is compact and reusable and it breaks problems into smaller pieces that are handled in an order that fits how the computer works. It also utilize computer resources effectively.</p>
+
+<p>I have said it many times because I have seen it many times, using OOP is seemingly innocent in the short-term, but the long-term consequences of fanatically using OOP and OOP based frameworks is a time bomb. Everything is eventually driven to a halt and the complexity of the beast requires so much computer that it is ridiculous. Nobody dares touch the code, projects get delayed, and developers give up adding in new features because it has become almost impossible. This is when the team starts planing a complete re-write. But if the original requirements haven't changed, but the software cannot handle even a mediocre exposure to the customer base, and the software now needs a rewrite to do its job properly, then clearly something was messed up from the very beginning.</p>
+
+<p>This is what <a href="https://en.wikipedia.org/wiki/Linus_Torvalds">Linus Torvalds</a>, the creator of the Linux kernel, addressed in his <a href="http://harmful.cat-v.org/software/c++/linus">email</a> when he criticized C++:</p>
+
+<blockquote>Inefficient abstracted programming models where two years down the road you notice that some abstraction wasn't very efficient, but now all your code depends on all the nice object models around it, and you cannot fix it without rewriting your app.</blockquote>
+
+</article>
+<footer><i>If you have any comments or corrections please feel free to email them to me. Also, if you found this content useful consider supporting me on <a href="https://patreon.com/unixsheikh">Patreon</a></i> ;)</footer>
+</body>
+</html>

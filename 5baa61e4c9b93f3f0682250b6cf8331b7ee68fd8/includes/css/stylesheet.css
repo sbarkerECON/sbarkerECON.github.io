@@ -1,0 +1,60 @@
+@charset "utf-8";
+html, body, header, nav, ul, li {margin:0;padding:0;border:0;font-size:100%;font-weight:normal;vertical-align:baseline;background:transparent;}
+html {font:16px monospace;}
+body {color:#000000;margin:20px auto 80px auto;width:70%;background:#fefefe;}
+ul {list-style-position:outside; margin-left:10px;}
+ul li {margin-left:10px;padding-bottom:5px;}
+ul.index {margin:0;padding:0;}
+ul.index li {margin:0;padding:0;}
+ul.index {list-style-position:outside;list-style-type:"\2022";margin-left:10px;color: #ff8c00;}
+ul.index li {margin-bottom:8px;}
+.info {padding:14px;border:1px solid transparent;border-radius:6px;}
+.info-blue {color:#004085;background-color:#cce5ff;border-color:#b8daff;}
+.info-blue hr {border-top-color:#9fcdff;}
+.info-blue .info-link {color:#002752;}
+.info-green {color:#155724;background-color:#d4edda;border-color:#c3e6cb;}
+.info-green hr {border-top-color:#b1dfbb;}
+.info-green .info-link {color:#0b2e13;}
+.info-mint {color:#0c5460;background-color:#d1ecf1;border-color:#bee5eb;}
+.info-mint hr {border-top-color:#abdde5;}
+.info-mint .info-link {color:#062c33;}
+.info-yellow {color:#59402D;background-color:#fff3cd;border-color:#c9ba9b;}
+.info-yellow hr {border-top-color:#ffe8a1;}
+.info-yellow .info-link {color:#533f03;}
+.info-red {color:#721c24;background-color:#f8d7da;border-color:#f5c6cb;}
+.info-red hr {border-top-color:#f1b0b7;}
+.info-red .info-link {color:#491217;}
+.info-grey {color:#555555;background-color:#e2e3e5;border-color:#d6d8db;}
+.info-grey hr {border-top-color:#c8cbcf;}
+.info-grey .info-link {color:#202326;}
+.index-intro {color:#626262;}
+.index-outdated {padding:0 3px;border:1px solid transparent;color:#721c24;background-color:#f8d7da;border-color:#f5c6cb;}
+.content-comment {margin:30px 0;}
+.post-data {font-size:smaller;padding:10px 0;color:#333333;}
+.abstract {padding:14px;white-space:pre-wrap;word-wrap:break-word;border:1px solid #c9ba9b;border-radius:6px;}
+a:visited {color:#828282;}
+nav {margin-bottom:20px;color:#555555;}
+nav a:hover {text-decoration:underline;}
+code {font-size:smaller;}
+pre {font-size:smaller;color:#333333;white-space:pre-wrap;word-wrap:break-word;background-color:#eeeeee;border:1px solid #aaaaaa;padding:14px;border-radius:6px;}
+pre.no-style {line-height:normal;background-color:#ffffff;border:0px;}
+a {color:#1168cc;text-decoration:none;}
+q {font-style:italic;}
+img {max-width:100%;border:0;-ms-interpolation-mode:bicubic;vertical-align:middle;}
+blockquote {color:#333333;margin:0;padding:0.2em 3em;border-left:0.2em orange solid;}
+hr {border:none;height:2px;color:#ffb300;background-color:#ffb300;}
+table.index {border-spacing:0px;}
+table.index td.date {font-size:x-small;color:#828282;}
+table.oddeven {font-size:smaller;border-spacing:0px;border:1px solid #cccccc;width:100%;max-width:100%;margin-bottom:15px;background-color:transparent;text-align:left;}
+table.oddeven th {font-weight:bold;border:1px solid #cccccc;padding:8px;}
+table.oddeven td {border:1px solid #cccccc;padding:8px;}
+table.oddeven tr {background-color:transparent;}
+/* Odd row color */
+table.oddeven tr:nth-of-type(2n+1) {background-color:#eeeeee;}
+table.oddeven tr th {background-color:#dddddd;}
+/* Hover Effect */
+table.oddeven tr {-moz-transition:background-color 300ms ease-in-out 0s;-ms-transition:background-color 300ms ease-in-out 0s;-o-transition:background-color 300ms ease-in-out 0s;-webkit-transition:background-color 300ms ease-in-out 0s;transition:background-color 300ms ease-in-out 0s;}
+table.oddeven tr:hover {background-color:#ffb90f;}
+table.oddeven tr {border-top:1px solid #cccccc;border-bottom:1px solid #cccccc;}
+table.oddeven th, table.oddeven td {border:none;}
+footer { margin:30px 0px;}

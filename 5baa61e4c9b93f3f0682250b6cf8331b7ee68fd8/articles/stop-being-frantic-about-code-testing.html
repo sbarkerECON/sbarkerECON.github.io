@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Stop being frantic about code testing</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://unixsheikh.com/feed.rss">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="../includes/css/stylesheet.css">
+</head>
+<body>
+<header>
+<nav>[ <a class="nav-btn" href="../">Home</a> • <a class="nav-btn" href="../about.html">About</a> • <a class="nav-btn" href="../faq.html">FAQ</a> • <a class="nav-btn" href="../hire-me.html">Hire me</a> • <a class="nav-btn" href="../contact.html">Contact</a> • <a class="nav-btn rss" href="../feed.rss">RSS</a> • <a class="nav-btn" href="../tutorials.html">Tutorials only</a> • <a class="nav-btn" href="../articles.html">Articles only</a> ]</nav>
+</header>
+<article>
+
+<h1>Stop being frantic about code testing</h1>
+<p class="post-data">Published on <span id="pubdate">2021-03-31</span>. Modified on <span id="moddate">2021-04-01</span>.</p>
+<p class="info info-yellow abstract">Code testing is not only great, it is a must as you cannot develop software without testing your code. However, there is something which I prefer to call "frantic code testing", which is something that needs to be avoided.</p>
+
+<p>It is no secret that I am not a fan of paranoid unit testing. There are examples out there where people have more code in their tests than in the actual code base. You might think that unit testing helps you avoid technical problems, but the fact is that unit testing is more about getting a psychological effect rather than a technical one, it's a way to make you feel better about yourself - yes, I said it.</p>
+
+<p>I am not against testing, I do vigorous testing myself during development, but I mostly prefer manual testing. During development every functionality is tested each time a minor change is made. The method I use is a rigorously usage of inserted breaks, where you halt the application at specific places during runtime and then check that the values and data is correct, all the time. At the same time you try to break the software, do things that you're not supposed to do. It is a very effective way to discover bugs early during development, because it not only quickly becomes a natural part of the development process, it is also better related to the way the software is intended to work. It is especially useful if you get into the habit of feeding the system the wrong kind of data. It is a method that requires patience and experience, but it is very effective. And no, it's not more time consuming that writing test, it's a more direct and natural part of the development process.</p>
+
+<p>Unit testing, and other forms of test written in code, also help, especially related to old software, software that has been running for years and that is working perfectly, but you now suddenly need to add something that might effect other parts of the system, and you can hardly remember anything about what does what and why.</p>
+
+<p>I do also implement automated testing and automated monitoring, especially on critical parts of a system, but only when it truly makes sense, and not as a rule carved in stone.</p>
+
+<p>But again, as with the object oriented paradigm, the industry has become frantic about testing. And it is seriously really tiresome how all this "best practice" keeps being taken to the extreme. I have witnessed how the issue of code testing makes some people feel superior, and how it is being used to look down upon someone if they haven't got a good test coverage.</p>
+
+<blockquote>Naturally your code already has comprehensive test coverage so I don't need to tell you that X is a bad idea right!?</blockquote>
+
+<p>That was a quote from someone (not naming any names) who has made it his mission in life to make sure that everyone else knows just how cool he is with his testing practices.</p>
+
+<p>In my humble opinion, and with all due respect, it's borderline stupid how much weight is being put on testing nowadays. So much so that it can actually have the opposite effect. Rather than focusing on the problems that the software is supposed to solve, people spend more time developing tests and getting the code to pass.</p>
+
+<p>Unless you're developing mission critical software you're much better of concentrating on the programming and problem solving. Then release early and release often. Don't worry too much about software failure as it is bound to happen no matter what you do. Plan ahead instead. Have a solid strategy for how you deal with failure, when it happens.</p>
+
+<p>When you get tied up in developing software for testing, and in design patterns and best practice, all your enthusiasm is lost and you lose precious energy that could have been spend creatively coming up with better and more efficient ways to deal with the problems you're facing.</p>
+
+<p>When you're "in the zone" you can hardly stop thinking about ways to improve stuff and find new and better ways to do things. You might be in the shower or taking a walk and suddenly you get a bright idea and can hardly wait to try it out. All that is strangled to death when 90% of your time is spend worrying about writing tests, fulfilling the demands of the design patterns and "best practice" fanatics.</p>
+
+<p>You should never aim for a 100% test coverage, if you do that then you're doing testing wrong! Major parts of the software are obviously correct and requires absolutely no test coverage, don't waste your time on that part. Focus on the parts of the software that are complex, then before you begin writing any tests, consider if there are ways in which you can simplify the complexity. Perhaps you can divide the code into even smaller pieces, and perhaps you can delegate responsibility to other functions. Unit testing can help some people here because if it is very difficult to write a test, perhaps the software is too complex. However, some parts of the software needs to be complex and you simply cannot avoid it! And no amount of testing will do you any good! Not everything can or should be broken down into teeny tiny pieces. And don't even get me started on <a href="https://en.wikipedia.org/wiki/Test-driven_development">TDD</a> being the driving force for the design of a program.</p>
+
+<p>The parts of the code you truly feel insecure about is not the code that needs the best test coverage, it's the part of code that needs refactoring.</p>
+
+<p>In any case, don't feel bad about yourself if you're not writing any code tests. The value of writing code tests is highly exaggerated.</p>
+
+<p><b>Update 2021-04-01:</b> I just want to comment on a few emails and comments I have gotten regarding this article.</p>
+
+<p>I have been in the industry for 34 years (as of writing) and I am not talking about <i>toy software</i> or software that you only work on for <i>a short time</i>.</p>
+
+<p>I have developed huge applications as well as minor ones, both as single developer and in cooperation with others. I have software that has been running at clients for more than 13 years with a huge customer base and tons of daily activity, still doing great.</p>
+
+<p>A pattern emerged very early in my experience that coincides very well with the Linux kernel model of development.</p>
+
+<p>By not focusing too much on patterns or "best practice" carved in stone, you are actually able to focus on the problems the software is supposed to solve. This doesn't mean that you should not care, or build crap that other developers would consider a nightmare to deal with, but you need to be practical. This is based upon pragmatic experience, not upon what other people (mainly the majority, or actually always the majority for some reason) are shouting loud about.</p>
+
+<p>Whatever the majority is doing, and whatever people seem to be frantic about, is usually the wrong way to do things. I believe it is because people who tend to become religious about such matters are often very insecure and emotional, as soon as they see someone going against the current, they become afraid because this jeopardizes their own position in life. They stand where they stand, not because they themselves have been thinking deep and hard about the stuff they do, but simply because they are "sheeplings".</p>
+
+<p>Oh, and by the way, yes I am serious.</p>
+
+</article>
+<footer><i>If you have any comments or corrections please feel free to email them to me. Also, if you found this content useful consider supporting me on <a href="https://patreon.com/unixsheikh">Patreon</a></i> ;)</footer>
+</body>
+</html>

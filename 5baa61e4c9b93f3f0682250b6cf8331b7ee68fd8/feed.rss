@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="0.91">
+<channel>
+    <title>unixsheikh.com</title>
+    <link>https://unixsheikh.com</link>
+    <description>Articles and tutorials about open source, BSD and GNU/Linux system administration, and programming - the pragmatic way.</description>
+<item>
+<pubDate>2021-04-14</pubDate>
+<title>FreeBSD 13 has been released, kudos to all involved!</title>
+<link>https://unixsheikh.com/articles/freebsd-13-has-been-released-kudos-to-all-involved.html</link>
+</item>
+<item>
+<pubDate>2021-04-14</pubDate>
+<title>SQLite the only database you will ever need in most cases</title>
+<link>https://unixsheikh.com/articles/sqlite-the-only-database-you-will-ever-need-in-most-cases.html</link>
+</item>
+<item>
+<pubDate>2021-04-02</pubDate>
+<title>Don't be afraid to code it yourself</title>
+<link>https://unixsheikh.com/articles/dont-be-afraid-to-code-it-yourself.html</link>
+</item>
+<item>
+<pubDate>2021-04-01</pubDate>
+<title>Straight forward problem solving mentality</title>
+<link>https://unixsheikh.com/articles/straight-forward-problem-solving-mentality.html</link>
+</item>
+<item>
+<pubDate>2021-03-31</pubDate>
+<title>Stop being frantic about code testing</title>
+<link>https://unixsheikh.com/articles/stop-being-frantic-about-code-testing.html</link>
+</item>
+<item>
+<pubDate>2021-03-30</pubDate>
+<title>How do I know if I really need object oriented programming?</title>
+<link>https://unixsheikh.com/articles/how-do-i-know-if-i-really-need-object-oriented-programming.html</link>
+</item>
+<item>
+<pubDate>2021-03-30</pubDate>
+<title>Procedural programming in a nutshell</title>
+<link>https://unixsheikh.com/articles/procedural-programming-in-a-nutshell.html</link>
+</item>
+<item>
+<pubDate>2021-03-30</pubDate>
+<title>How to test procedural functions with PHPUnit</title>
+<link>https://unixsheikh.com/tutorials/how-to-test-procedural-functions-with-phpunit.html</link>
+</item>
+<item>
+<pubDate>2021-03-27</pubDate>
+<title>No more object oriented programming with PHP</title>
+<link>https://unixsheikh.com/articles/no-more-object-oriented-programming-with-php.html</link>
+</item>
+<item>
+<pubDate>2021-03-01</pubDate>
+<title>JavaScript malware infested nightmare</title>
+<link>https://unixsheikh.com/articles/javascript-malware-infested-nightmare.html</link>
+</item>
+<item>
+<pubDate>2021-02-16</pubDate>
+<title>Code has to be simplified until it becomes absolutely correct</title>
+<link>https://unixsheikh.com/articles/code-has-to-be-simplified-until-it-becomes-absolutely-correct.html</link>
+</item>
+<item>
+<pubDate>2021-02-11</pubDate>
+<title>This is how you keep your dignity and not sell your soul</title>
+<link>https://unixsheikh.com/articles/this-is-how-you-keep-your-dignity-and-not-sell-your-soul.html</link>
+</item>
+<item>
+<pubDate>2021-02-10</pubDate>
+<title>Are you trusting open source blindly? Then you're in for a world of hurt!</title>
+<link>https://unixsheikh.com/articles/are-you-trusting-open-source-blindly-then-you-are-in-for-a-world-of-hurt.html</link>
+</item>
+<item>
+<pubDate>2021-02-10</pubDate>
+<title>One sure way to determine if you are stupid</title>
+<link>https://unixsheikh.com/articles/one-sure-way-to-determine-if-you-are-stupid.html</link>
+</item>
+<item>
+<pubDate>2021-02-10</pubDate>
+<title>Real full disk encryption using GRUB on Artix Linux for BIOS and UEFI</title>
+<link>https://unixsheikh.com/tutorials/real-full-disk-encryption-using-grub-on-artix-linux-for-bios-and-uefi.html</link>
+</item>
+<item>
+<pubDate>2021-02-02</pubDate>
+<title>The problems with the GPL</title>
+<link>https://unixsheikh.com/articles/the-problems-with-the-gpl.html</link>
+</item>
+<item>
+<pubDate>2021-01-24</pubDate>
+<title>Future prediction: The so-called modern web will die soon</title>
+<link>https://unixsheikh.com/articles/future-prediction-the-so-called-modern-web-will-die-soon.html</link>
+</item>
+<item>
+<pubDate>2021-01-13</pubDate>
+<title>The terminal, the console and the shell - what are they?</title>
+<link>https://unixsheikh.com/articles/the-terminal-the-console-and-the-shell-what-are-they.html</link>
+</item>
+<item>
+<pubDate>2020-11-08</pubDate>
+<title>The Social Dilemma</title>
+<link>https://unixsheikh.com/articles/the-social-dilemma.html</link>
+</item>
+<item>
+<pubDate>2020-11-05</pubDate>
+<title>OpenBSD Router Guide</title>
+<link>https://unixsheikh.com/tutorials/openbsd-router-guide.html</link>
+</item>
+<item>
+<pubDate>2020-10-23</pubDate>
+<title>Important open source projects should not use GitHub</title>
+<link>https://unixsheikh.com/articles/important-open-source-projects-should-not-use-github.html</link>
+</item>
+<item>
+<pubDate>2020-10-20</pubDate>
+<title>Choose your browser carefully</title>
+<link>https://unixsheikh.com/articles/choose-your-browser-carefully.html</link>
+</item>
+<item>
+<pubDate>2020-10-18</pubDate>
+<title>Come full circle - back to HTML</title>
+<link>https://unixsheikh.com/articles/come-full-circle-back-to-html.html</link>
+</item>
+<item>
+<pubDate>2020-06-08</pubDate>
+<title>No, you cannot have a third of my life!</title>
+<link>https://unixsheikh.com/articles/no-you-cannot-have-a-third-of-my-life.html</link>
+</item>
+<item>
+<pubDate>2020-04-11</pubDate>
+<title>Technical reasons to choose FreeBSD over GNU/Linux</title>
+<link>https://unixsheikh.com/articles/technical-reasons-to-choose-freebsd-over-linux.html</link>
+</item>
+<item>
+<pubDate>2020-04-07</pubDate>
+<title>Vim - I hate to love you</title>
+<link>https://unixsheikh.com/articles/vim-i-hate-to-love-you.html</link>
+</item>
+<item>
+<pubDate>2020-03-23</pubDate>
+<title>Turning suckless into suckmore</title>
+<link>https://unixsheikh.com/articles/turning-suckless-into-suckmore.html</link>
+</item>
+<item>
+<pubDate>2020-03-21</pubDate>
+<title>How you can manage the i3 window manager on multiple computers</title>
+<link>https://unixsheikh.com/tutorials/how-you-can-manage-the-i3-window-manager-on-multiple-computers.html</link>
+</item>
+<item>
+<pubDate>2020-02-11</pubDate>
+<title>Migrating ZFS from Linux to FreeBSD</title>
+<link>https://unixsheikh.com/tutorials/migrating-zfs-from-linux-to-freebsd.html</link>
+</item>
+<item>
+<pubDate>2020-02-09</pubDate>
+<title>Some of the great GNU/Linux distributions</title>
+<link>https://unixsheikh.com/articles/some-of-the-great-gnu-linux-distributions.html</link>
+</item>
+<item>
+<pubDate>2020-02-07</pubDate>
+<title>Choosing between OpenBSD and FreeBSD</title>
+<link>https://unixsheikh.com/articles/choosing-between-openbsd-and-freebsd.html</link>
+</item>
+<item>
+<pubDate>2020-02-07</pubDate>
+<title>systemd isn't safe to run anywhere</title>
+<link>https://unixsheikh.com/articles/systemd-isnt-safe-to-run-anywhere.html</link>
+</item>
+<item>
+<pubDate>2020-02-01</pubDate>
+<title>Samba and NFS performance - ZFS on Linux vs ZFS on FreeBSD</title>
+<link>https://unixsheikh.com/articles/samba-and-nfs-performance-zfs-on-linux-vs-zfs-on-freebsd.html</link>
+</item>
+<item>
+<pubDate>2020-01-24</pubDate>
+<title>How to setup FreeBSD with a riced desktop - part 3 - i3</title>
+<link>https://unixsheikh.com/tutorials/how-to-setup-freebsd-with-a-riced-desktop-part-3-i3.html</link>
+</item>
+<item>
+<pubDate>2020-01-23</pubDate>
+<title>How to setup FreeBSD with a riced desktop - part 2 - Xfce</title>
+<link>https://unixsheikh.com/tutorials/how-to-setup-freebsd-with-a-riced-desktop-part-2-xfce.html</link>
+</item>
+<item>
+<pubDate>2020-01-22</pubDate>
+<title>How to setup FreeBSD with a riced desktop - part 1 - Basic setup</title>
+<link>https://unixsheikh.com/tutorials/how-to-setup-freebsd-with-a-riced-desktop-part-1-basic-setup.html</link>
+</item>
+<item>
+<pubDate>2020-01-21</pubDate>
+<title>Why you should migrate everything from Linux to BSD - part 2</title>
+<link>https://unixsheikh.com/articles/why-you-should-migrate-everything-from-linux-to-bsd-part-2.html</link>
+</item>
+<item>
+<pubDate>2020-01-20</pubDate>
+<title>FreeBSD is an amazing operating system</title>
+<link>https://unixsheikh.com/articles/freebsd-is-an-amazing-operating-system.html</link>
+</item>
+<item>
+<pubDate>2020-01-18</pubDate>
+<title>Why you should migrate everything from Linux to BSD</title>
+<link>https://unixsheikh.com/articles/why-you-should-migrate-everything-from-linux-to-bsd.html</link>
+</item>
+<item>
+<pubDate>2019-12-25</pubDate>
+<title>Job interviews in web development gone haywire</title>
+<link>https://unixsheikh.com/articles/job-interviews-in-web-development-gone-haywire.html</link>
+</item>
+<item>
+<pubDate>2019-11-07</pubDate>
+<title>When the modern approach is nothing but hype</title>
+<link>https://unixsheikh.com/articles/when-the-modern-approach-is-nothing-but-hype.html</link>
+</item>
+<item>
+<pubDate>2019-11-03</pubDate>
+<title>My favorite note-taking method</title>
+<link>https://unixsheikh.com/articles/my-favorite-note-taking-method.html</link>
+</item>
+<item>
+<pubDate>2019-11-02</pubDate>
+<title>Go (Golang) - understanding the object oriented features with structs, methods, and interfaces</title>
+<link>https://unixsheikh.com/articles/go-understanding-the-object-oriented-features-with-structs-methods-and-interfaces.html</link>
+</item>
+<item>
+<pubDate>2019-07-16</pubDate>
+<title>Go (Golang) - Errors and panics</title>
+<link>https://unixsheikh.com/articles/go-errors-and-panics.html</link>
+</item>
+<item>
+<pubDate>2019-07-14</pubDate>
+<title>Go (Golang) - Logging that matters</title>
+<link>https://unixsheikh.com/articles/go-logging-that-matters.html</link>
+</item>
+<item>
+<pubDate>2019-07-02</pubDate>
+<title>Stop pushing JavaScript!</title>
+<link>https://unixsheikh.com/articles/stop-pushing-javascript.html</link>
+</item>
+<item>
+<pubDate>2019-05-26</pubDate>
+<title>When abstraction, design patterns, and principles leads to spaghetti code</title>
+<link>https://unixsheikh.com/articles/when-abstraction-design-patterns-and-principles-leads-to-spaghetti-code.html</link>
+</item>
+<item>
+<pubDate>2019-05-05</pubDate>
+<title>Battle testing data integrity verification with ZFS, Btrfs and mdadm+dm-integrity</title>
+<link>https://unixsheikh.com/articles/battle-testing-data-integrity-verification-with-zfs-btrfs-and-mdadm-dm-integrity.html</link>
+</item>
+<item>
+<pubDate>2019-03-28</pubDate>
+<title>Installing Arch Linux with ZFS on a USB stick</title>
+<link>https://unixsheikh.com/tutorials/installing-arch-linux-with-zfs-on-a-usb-stick.html</link>
+</item>
+<item>
+<pubDate>2018-12-05</pubDate>
+<title>Remuxing ISO, DVD, or Bluray using cat and ffmpeg on Linux</title>
+<link>https://unixsheikh.com/tutorials/remuxing-iso-dvd-or-bluray-using-cat-and-ffmpeg-on-linux.html</link>
+</item>
+<item>
+<pubDate>2018-11-11</pubDate>
+<title>Reviving Cubox with Arch Linux ARM</title>
+<link>https://unixsheikh.com/tutorials/reviving-cubox-with-arch-linux-arm.html</link>
+</item>
+<item>
+<pubDate>2018-05-01</pubDate>
+<title>The real motivation behind systemd</title>
+<link>https://unixsheikh.com/articles/the-real-motivation-behind-systemd.html</link>
+</item>
+<item>
+<pubDate>2018-03-30</pubDate>
+<title>Void Linux - a great and unique Linux distribution</title>
+<link>https://unixsheikh.com/articles/void-linux-a-great-and-unique-linux-distribution.html</link>
+</item>
+<item>
+<pubDate>2018-03-30</pubDate>
+<title>Real full disk encryption using GRUB on Void Linux for BIOS</title>
+<link>https://unixsheikh.com/tutorials/real-full-disk-encryption-using-grub-on-void-linux-for-bios.html</link>
+</item>
+<item>
+<pubDate>2018-03-29</pubDate>
+<title>Package management in OpenBSD</title>
+<link>https://unixsheikh.com/tutorials/package-management-in-openbsd.html</link>
+</item>
+<item>
+<pubDate>2018-03-13</pubDate>
+<title>OpenBSD is fantastic</title>
+<link>https://unixsheikh.com/articles/openbsd-is-fantastic.html</link>
+</item>
+<item>
+<pubDate>2017-12-29</pubDate>
+<title>Arch Linux mail server tutorial - part 3 - Get DNS right, it's important!</title>
+<link>https://unixsheikh.com/tutorials/arch-linux-mail-server-tutorial-part-3-get-dns-right-it-is-important.html</link>
+</item>
+<item>
+<pubDate>2017-12-28</pubDate>
+<title>Arch Linux mail server tutorial - part 2 - OpenSMTPD, Dovecot, DKIMproxy, and Let's Encrypt</title>
+<link>https://unixsheikh.com/tutorials/arch-linux-mail-server-tutorial-part-2-opensmtpd-dovecot-dkimproxy-and-lets-encrypt.html</link>
+</item>
+<item>
+<pubDate>2017-12-27</pubDate>
+<title>Arch Linux mail server tutorial - part 1 - What is email?</title>
+<link>https://unixsheikh.com/tutorials/arch-linux-mail-server-tutorial-part-1-what-is-email.html</link>
+</item>
+<item>
+<pubDate>2017-12-20</pubDate>
+<title>Stay away from CloudFlare</title>
+<link>https://unixsheikh.com/articles/stay-away-from-cloudflare.html</link>
+</item>
+<item>
+<pubDate>2017-12-13</pubDate>
+<title>Is Google evil?</title>
+<link>https://unixsheikh.com/articles/is-google-evil.html</link>
+</item>
+<item>
+<pubDate>2017-12-10</pubDate>
+<title>Make the current commit the initial commit in a Git repository</title>
+<link>https://unixsheikh.com/tutorials/make-the-current-commit-the-initial-commit-in-a-git-repository.html</link>
+</item>
+<item>
+<pubDate>2017-10-15</pubDate>
+<title>The typical discussions about BSD vs Linux</title>
+<link>https://unixsheikh.com/articles/the-typical-discussions-about-bsd-vs-linux.html</link>
+</item>
+<item>
+<pubDate>2017-06-23</pubDate>
+<title>Real full disk encryption using GRUB on Debian GNU/Linux for BIOS</title>
+<link>https://unixsheikh.com/tutorials/real-full-disk-encryption-using-grub-on-debian-linux-for-bios.html</link>
+</item>
+<item>
+<pubDate>2017-05-30</pubDate>
+<title>Real full disk encryption using GRUB on Arch Linux for BIOS and UEFI</title>
+<link>https://unixsheikh.com/tutorials/real-full-disk-encryption-using-grub-on-arch-linux-for-bios-and-uefi.html</link>
+</item>
+<item>
+<pubDate>2016-12-19</pubDate>
+<title>No your PHP framework isn't MVC, but don't worry, it really shouldn't be!</title>
+<link>https://unixsheikh.com/articles/no-your-web-application-isnt-mvc.html</link>
+</item>
+<item>
+<pubDate>2016-11-14</pubDate>
+<title>How to split your DNS requests when using a VPN</title>
+<link>https://unixsheikh.com/tutorials/how-to-split-your-dns-requests-when-using-vpn.html</link>
+</item>
+<item>
+<pubDate>2016-01-02</pubDate>
+<title>Programming languages and programming paradigms</title>
+<link>https://unixsheikh.com/articles/programming-languages-and-programming-paradigms.html</link>
+</item>
+<item>
+<pubDate>2015-12-20</pubDate>
+<title>Bummer PHP</title>
+<link>https://unixsheikh.com/articles/bummer-php.html</link>
+</item>
+<item>
+<pubDate>2015-12-10</pubDate>
+<title>Composer and Packagist - a bad implementation!</title>
+<link>https://unixsheikh.com/articles/composer-packagist-a-bad-implementation.html</link>
+</item>
+<item>
+<pubDate>2015-11-10</pubDate>
+<title>To framework or not to framework?</title>
+<link>https://unixsheikh.com/articles/to-framework-or-not-to-framework.html</link>
+</item>
+<item>
+<pubDate>2015-11-01</pubDate>
+<title>No your API isn't REST, but don't worry, it really shouldn't be!</title>
+<link>https://unixsheikh.com/articles/no-your-api-isnt-rest.html</link>
+</item>
+<item>
+<pubDate>2015-03-15</pubDate>
+<title>Design Patterns Can Be Very Evil</title>
+<link>https://unixsheikh.com/articles/design-patterns-can-be-very-evil.html</link>
+</item>
+<item>
+<pubDate>2015-02-28</pubDate>
+<title>Procedural Programming vs Object Oriented Programming</title>
+<link>https://unixsheikh.com/articles/procedural-programming-vs-object-oriented-programming.html</link>
+</item>
+<item>
+<pubDate>2015-01-01</pubDate>
+<title>Web application with a single entry point</title>
+<link>https://unixsheikh.com/articles/web-application-with-a-single-entry-point.html</link>
+</item>
+<item>
+<pubDate>2014-12-17</pubDate>
+<title>Keeping your home in Git, the right way</title>
+<link>https://unixsheikh.com/tutorials/keeping-your-home-in-git.html</link>
+</item>
+<item>
+<pubDate>2013-10-16</pubDate>
+<title>Some notes on Arch Linux - 2</title>
+<link>https://unixsheikh.com/articles/some-notes-on-arch-linux-2.html</link>
+</item>
+<item>
+<pubDate>2013-04-23</pubDate>
+<title>PSR-0 is not a solution it is a bypass!</title>
+<link>https://unixsheikh.com/articles/psr-0-is-not-a-solution-it-is-a-bypass.html</link>
+</item>
+<item>
+<pubDate>2013-04-17</pubDate>
+<title>Most PHP Frameworks are not for programmers</title>
+<link>https://unixsheikh.com/articles/most-php-frameworks-are-not-for-programmers.html</link>
+</item>
+<item>
+<pubDate>2013-03-26</pubDate>
+<title>When templates gets in the way</title>
+<link>https://unixsheikh.com/articles/when-templates-gets-in-the-way.html</link>
+</item>
+<item>
+<pubDate>2013-02-04</pubDate>
+<title>Be careful when using docking stations</title>
+<link>https://unixsheikh.com/tutorials/be-careful-when-using-docking-stations.html</link>
+</item>
+<item>
+<pubDate>2012-12-15</pubDate>
+<title>An alternative way to play YouTube videos without using Flash</title>
+<link>https://unixsheikh.com/tutorials/an-alternative-way-to-play-youtube-videos-without-using-flash.html</link>
+</item>
+<item>
+<pubDate>2012-01-18</pubDate>
+<title>GnuPG Tutorial</title>
+<link>https://unixsheikh.com/tutorials/gnupg-tutorial.html</link>
+</item>
+<item>
+<pubDate>2012-01-18</pubDate>
+<title>How to Create a New and Empty Branch in Git</title>
+<link>https://unixsheikh.com/tutorials/how-to-create-a-new-and-empty-branch-in-git.html</link>
+</item>
+<item>
+<pubDate>2012-01-18</pubDate>
+<title>How to set your hostname and domain name correctly</title>
+<link>https://unixsheikh.com/tutorials/how-to-set-your-hostname-and-domain-name-correctly.html</link>
+</item>
+<item>
+<pubDate>2011-03-17</pubDate>
+<title>Enforce strong passwords in Debian</title>
+<link>https://unixsheikh.com/tutorials/enforce-strong-passwords-in-debian.html</link>
+</item>
+<item>
+<pubDate>2011-02-12</pubDate>
+<title>Unloading of modules at boot time in Debian</title>
+<link>https://unixsheikh.com/tutorials/unloading-of-modules-at-boot-time-in-debian.html</link>
+</item>
+<item>
+<pubDate>2010-12-17</pubDate>
+<title>Benchmark 4 - Notes About Caching and Benchmarking</title>
+<link>https://unixsheikh.com/articles/benchmark-4-notes-about-caching-and-benchmarking.html</link>
+</item>
+<item>
+<pubDate>2010-12-16</pubDate>
+<title>Benchmark 3 - The Alternative PHP Cache (APC)</title>
+<link>https://unixsheikh.com/articles/benchmark-3-the-alternative-php-cache-apc.html</link>
+</item>
+<item>
+<pubDate>2010-12-15</pubDate>
+<title>Benchmark 2 - MySQL Cache</title>
+<link>https://unixsheikh.com/articles/benchmark-2-mysql-cache.html</link>
+</item>
+<item>
+<pubDate>2010-12-14</pubDate>
+<title>Benchmark 1 - Dynamic pages vs. static pages vs. Memcached</title>
+<link>https://unixsheikh.com/articles/benchmark-1-dynamic-pages-vs-static-pages-vs-memcached.html</link>
+</item>
+<item>
+<pubDate>2010-11-18</pubDate>
+<title>Social Networking Suck</title>
+<link>https://unixsheikh.com/articles/social-networking-suck.html</link>
+</item>
+<item>
+<pubDate>2010-11-05</pubDate>
+<title>The Book "Pro PHP Refactoring"</title>
+<link>https://unixsheikh.com/articles/the-book-pro-php-refactoring.html</link>
+</item>
+<item>
+<pubDate>2010-10-21</pubDate>
+<title>Code comments are good right? Well, not if there are too many!</title>
+<link>https://unixsheikh.com/articles/too-many-comments.html</link>
+</item>
+<item>
+<pubDate>2010-10-12</pubDate>
+<title>Code Navigation, Design Patterns, and Too Many Functions</title>
+<link>https://unixsheikh.com/articles/code-navigation-design-patterns-and-too-many-functions.html</link>
+</item>
+<item>
+<pubDate>2010-10-09</pubDate>
+<title>Git bare vs. non-bare repositories</title>
+<link>https://unixsheikh.com/tutorials/git-bare-vs-non-bare-repositories.html</link>
+</item>
+<item>
+<pubDate>2010-09-07</pubDate>
+<title>What does GRUB see?</title>
+<link>https://unixsheikh.com/tutorials/what-does-grub-see.html</link>
+</item>
+<item>
+<pubDate>2010-01-19</pubDate>
+<title>Windows XP nv4_disp infinite loop problem</title>
+<link>https://unixsheikh.com/tutorials/windows-xp-nv4-disp-infinite-loop-problem.html</link>
+</item>
+<item>
+<pubDate>2010-01-12</pubDate>
+<title>umount - device is busy</title>
+<link>https://unixsheikh.com/tutorials/umount-device-is-busy.html</link>
+</item>
+<item>
+<pubDate>2010-01-12</pubDate>
+<title>For Debian - what package does that file belong to?</title>
+<link>https://unixsheikh.com/tutorials/what-package-does-that-file-belong-to.html</link>
+</item>
+<item>
+<pubDate>2010-01-07</pubDate>
+<title>Simple CHM to PDF conversion on Linux</title>
+<link>https://unixsheikh.com/tutorials/simple-chm-to-pdf-conversion-on-linux.html</link>
+</item>
+<item>
+<pubDate>2009-12-15</pubDate>
+<title>Resume SFTP transfer with rsync</title>
+<link>https://unixsheikh.com/tutorials/resume-sftp-transfer-with-rsync.html</link>
+</item>
+<item>
+<pubDate>2009-10-21</pubDate>
+<title>Passwords from the hackers point of view</title>
+<link>https://unixsheikh.com/articles/passwords-from-the-hackers-point-of-view.html</link>
+</item>
+<item>
+<pubDate>2009-10-20</pubDate>
+<title>Localized version in the console? No thanks!</title>
+<link>https://unixsheikh.com/tutorials/localized-version-in-the-console-no-thanks.html</link>
+</item>
+<item>
+<pubDate>2009-10-15</pubDate>
+<title>How to convert a man page into PS, PDF or DVI</title>
+<link>https://unixsheikh.com/tutorials/how-to-convert-a-man-page-into-ps-pdf-or-dvi.html</link>
+</item>
+<item>
+<pubDate>2009-10-14</pubDate>
+<title>Mercurial branching, main and stable, a possible workflow</title>
+<link>https://unixsheikh.com/tutorials/mercurial-branching-main-and-stable-a-possible-workflow.html</link>
+</item>
+<item>
+<pubDate>2009-10-12</pubDate>
+<title>Some personal notes on revision control and backup</title>
+<link>https://unixsheikh.com/articles/some-personal-notes-on-revision-control-and-backup.html</link>
+</item>
+<item>
+<pubDate>2009-09-15</pubDate>
+<title>PHP include path problems</title>
+<link>https://unixsheikh.com/tutorials/php-include-path-problems.html</link>
+</item>
+<item>
+<pubDate>2009-08-13</pubDate>
+<title>Why I do not like derived Linux distributions</title>
+<link>https://unixsheikh.com/articles/why-i-do-not-like-derived-linux-distributions.html</link>
+</item>
+<item>
+<pubDate>2009-08-04</pubDate>
+<title>Mount an OpenBSD slice from Linux</title>
+<link>https://unixsheikh.com/tutorials/mount-an-openbsd-slice-from-linux.html</link>
+</item>
+<item>
+<pubDate>2009-08-01</pubDate>
+<title>Finding and removing duplicate files with fdupes</title>
+<link>https://unixsheikh.com/tutorials/finding-and-removing-duplicate-files-with-fdupes.html</link>
+</item>
+<item>
+<pubDate>2009-08-01</pubDate>
+<title>Mozilla Firefox Keywords Shortcuts</title>
+<link>https://unixsheikh.com/tutorials/mozilla-firefox-keywords-shortcuts.html</link>
+</item>
+<item>
+<pubDate>2009-04-01</pubDate>
+<title>Encrypting and decrypting files using GnuPG, OpenSSL or Mcrypt</title>
+<link>https://unixsheikh.com/tutorials/encrypting-and-decrypting-files-using-gnupg-openssl-or-mcrypt.html</link>
+</item>
+<item>
+<pubDate>2009-03-15</pubDate>
+<title>Cache your DNS requests using Bind</title>
+<link>https://unixsheikh.com/tutorials/cache-your-dns-requests.html</link>
+</item>
+<item>
+<pubDate>2009-03-15</pubDate>
+<title>CD or DVD Boot problems on MAC</title>
+<link>https://unixsheikh.com/tutorials/cd-or-dvd-boot-problems-with-mac.html</link>
+</item>
+<item>
+<pubDate>2009-03-15</pubDate>
+<title>Keeping the system time precise using NTP</title>
+<link>https://unixsheikh.com/tutorials/keeping-the-system-time-precise-using-ntp.html</link>
+</item>
+<item>
+<pubDate>2009-03-15</pubDate>
+<title>Remove -- MARK -- from the message log</title>
+<link>https://unixsheikh.com/tutorials/remove-mark-from-the-message-log.html</link>
+</item>
+<item>
+<pubDate>2009-03-14</pubDate>
+<title>Resume SFTP transfer with PuTTY</title>
+<link>https://unixsheikh.com/tutorials/resume-sftp-transfer-with-putty.html</link>
+</item>
+<item>
+<pubDate>2008-11-28</pubDate>
+<title>PHP Security</title>
+<link>https://unixsheikh.com/articles/php-security.html</link>
+</item>
+<item>
+<pubDate>2008-11-04</pubDate>
+<title>Some notes on Arch Linux</title>
+<link>https://unixsheikh.com/articles/some-notes-on-arch-linux.html</link>
+</item>
+<item>
+<pubDate>2008-11-03</pubDate>
+<title>Ubuntu as in Debian?</title>
+<link>https://unixsheikh.com/articles/ubuntu-as-in-debian.html</link>
+</item>
+<item>
+<pubDate>2008-11-02</pubDate>
+<title>Using EncFS to encrypt some of your files</title>
+<link>https://unixsheikh.com/tutorials/using-encfs-to-encrypt-some-of-your-files.html</link>
+</item>
+<item>
+<pubDate>2008-10-30</pubDate>
+<title>Choosing a new backup solution, Duplicity, rdiff-backup or Rsnapshot</title>
+<link>https://unixsheikh.com/tutorials/choosing-a-new-backup-solution-duplicity-rdiff-backup-or-rsnapshot.html</link>
+</item>
+<item>
+<pubDate>2008-08-12</pubDate>
+<title>Speed down your CPU</title>
+<link>https://unixsheikh.com/tutorials/speed-down-your-cpu.html</link>
+</item>
+<item>
+<pubDate>2007-12-26</pubDate>
+<title>Pointers in C</title>
+<link>https://unixsheikh.com/tutorials/pointers-in-c.html</link>
+</item>
+<item>
+<pubDate>2007-12-25</pubDate>
+<title>Programming in C, Cpp, and Ada</title>
+<link>https://unixsheikh.com/articles/programming-in-c-cpp-and-ada.html</link>
+</item>
+<item>
+<pubDate>2007-12-14</pubDate>
+<title>Choosing a good book on programming</title>
+<link>https://unixsheikh.com/articles/choosing-a-good-book-on-programming.html</link>
+</item>
+<item>
+<pubDate>2007-11-17</pubDate>
+<title>Revision control</title>
+<link>https://unixsheikh.com/articles/revision-control.html</link>
+</item>
+<item>
+<pubDate>2007-08-22</pubDate>
+<title>Wrong default encoding on the Apache webserver</title>
+<link>https://unixsheikh.com/tutorials/wrong-default-encoding-on-the-apache-webserver.html</link>
+</item>
+<item>
+<pubDate>2007-01-13</pubDate>
+<title>Who is listening on my ports</title>
+<link>https://unixsheikh.com/tutorials/who-is-listening-on-my-ports.html</link>
+</item>
+<item>
+<pubDate>2006-05-22</pubDate>
+<title>diff and patch</title>
+<link>https://unixsheikh.com/tutorials/diff-and-patch.html</link>
+</item>
+</channel></rss>
