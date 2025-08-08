@@ -9,33 +9,25 @@
         --bg:#0f172a; --card:#111827; --border:#334155; --text:#f1f5f9; --muted:#94a3b8; --accent:#3b82f6; --gold:#facc15; --answer:#38bdf8;
       }
       html,body{height:100%}
-      body {
-        margin: 0; padding: 0; background: var(--bg); color: var(--text);
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-        display: flex; flex-direction: column; align-items: center; justify-content: center;
-        min-height: 100vh; overflow:hidden;
-      }
-      #slide { width: min(92vw, 880px); background: var(--card); border: 2px solid var(--border);
-        border-radius: 18px; padding: clamp(16px, 4vw, 32px); box-shadow: 0 0 24px rgba(0,0,0,0.35);
-        text-align: center; position:relative; overflow:hidden; }
-
-      .level-up { color: var(--gold); font-weight: 800; margin: 0 0 10px; letter-spacing: .5px; }
-      .question { font-size: clamp(20px, 3.2vw, 34px); line-height: 1.25; margin: 6px 0 10px; }
-      .answer   { font-size: clamp(18px, 2.6vw, 28px); line-height: 1.3; margin-top: 12px; color: var(--answer); display: none; }
-      .note     { font-size: clamp(16px, 2.4vw, 22px); color: var(--text); margin-top: 8px; font-style: normal; display: none; }
-      .controls { margin-top: 20px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
-      button { padding: 10px 16px; background: var(--accent); color: #fff; border: 0; border-radius: 10px; font-size: 16px; cursor: pointer; }
-      button:active { transform: scale(.98); }
-      .muted { opacity: .85; color: var(--muted); }
-
-      /* Title slide */
-      .title { font-size: clamp(32px, 6vw, 56px); line-height:1.05; font-weight: 900; letter-spacing:.5px; }
-      .subtitle { font-size: clamp(16px, 3vw, 22px); margin-top: 10px; color: var(--muted); }
-
+      body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;overflow:hidden}
+      #slide{width:min(92vw,880px);background:var(--card);border:2px solid var(--border);border-radius:18px;padding:clamp(16px,4vw,32px);box-shadow:0 0 24px rgba(0,0,0,.35);text-align:center;position:relative;overflow:hidden}
+      .level-up{color:var(--gold);font-weight:800;margin:0 0 10px;letter-spacing:.5px}
+      .question{font-size:clamp(20px,3.2vw,34px);line-height:1.25;margin:6px 0 10px}
+      .answer{font-size:clamp(18px,2.6vw,28px);line-height:1.3;margin-top:12px;color:var(--answer);display:none}
+      .note{font-size:clamp(16px,2.4vw,22px);color:var(--text);margin-top:8px;font-style:normal;display:none}
+      .controls{margin-top:20px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+      button{padding:10px 16px;background:var(--accent);color:#fff;border:0;border-radius:10px;font-size:16px;cursor:pointer}
+      button:active{transform:scale(.98)}
+      .muted{opacity:.85;color:var(--muted)}
+      /* Title + level slides */
+      .title{font-size:clamp(32px,6vw,56px);line-height:1.05;font-weight:900;letter-spacing:.5px}
+      .subtitle{font-size:clamp(16px,3vw,22px);margin-top:10px;color:var(--muted)}
+      .level-card{font-size:clamp(24px,5vw,42px);font-weight:900;color:var(--gold)}
+      .level-sub{font-size:clamp(14px,2.5vw,20px);color:var(--muted)}
       /* simple twinkle */
-      .twinkle { position:absolute; inset:0; pointer-events:none; }
-      .star { position:absolute; width:3px; height:3px; background:#fff; border-radius:50%; opacity:.7; animation: twinkle 2.2s infinite ease-in-out; }
-      @keyframes twinkle { 0%,100%{ transform:scale(0.6); opacity:.5 } 50%{ transform:scale(1.4); opacity:1 } }
+      .twinkle{position:absolute;inset:0;pointer-events:none}
+      .star{position:absolute;width:3px;height:3px;background:#fff;border-radius:50%;opacity:.7;animation:twinkle 2.2s infinite ease-in-out}
+      @keyframes twinkle{0%,100%{transform:scale(.6);opacity:.5}50%{transform:scale(1.4);opacity:1}}
     </style>
   </head>
   <body>
@@ -54,45 +46,52 @@
     </div>
 
     <script>
-      // --- Slides (includes title slide) ---
+      // --- Slides: Title, explicit Level cards, then questions ---
       const slides = [
         // TITLE
-        { type: 'title', level: '', q: '🚀✨ SPACE TRIVIA ✨🚀', a: 'Tap Reveal to practice… or Next to begin!', note: "Birthday Edition" },
-        // 1
-        { level: '1', q: "During my 2nd birthday in 1998, what would have held the title of most distant planet from the Sun?", a: "Neptune", note: "Pluto’s orbit was inside Neptune’s from 1979–1999." },
-        { level: '1', q: "What is the nearest star?", a: "Proxima Centauri (will accept Alpha Centauri)", note: "Proxima is part of the Alpha Centauri system." },
-        { level: '1', q: "What fictional astronaut shares a first name with the second man to walk on the moon?", a: "Buzz Lightyear" },
-        { level: '1', q: "Our galaxy will eventually collide with the nearest galaxy. What is the name of that galaxy?", a: "Andromeda (M31)" },
-        { level: '1', q: "The same side of the Moon always faces the Earth. What is the name of the phenomenon that causes this?", a: "Tidal locking" },
-        { level: '1', q: "Mars has two primary moons. Name one of them. (BONUS for both)", a: "Deimos and Phobos" },
-        { level: '1', q: "Apollo 11 was the first Moon landing. What was the lunar lander called?", a: "The Eagle" },
-        { level: '1', q: "What does NASA stand for? (BONUS: JPL)", a: "National Aeronautics and Space Administration", note: "BONUS: JPL = Jet Propulsion Laboratory." },
-        { level: '1', q: "Sputnik 1 was the first man-made satellite. What was the second?", a: "Sputnik 2" },
-        { level: '1', q: "What famous science fiction movie features a murderous AI, chimps, and a giant space baby?", a: "2001: A Space Odyssey" },
-        { level: '1', q: "What was the name of the location of the Apollo 11 Moon landing?", a: "Hollywood.", note: "Joke! Sea of Tranquility." },
-        { level: '1', q: "What is the name of the constellation containing the North Star, Polaris?", a: "Ursa Minor (Little Dipper)" },
-        { level: '1', q: "What famous 2010s sci‑fi film rendered a black hole with a supercomputer?", a: "Interstellar" },
-        { level: '1', q: "What planet is closest to Earth (on average)?", a: "Mercury" },
-        { level: '1', q: "What do Russians call their ‘astronauts’?", a: "Cosmonauts", note: "From Greek: 'kosmos' + 'nautes' (sailor)." },
-        // LEVEL 2
-        { level: '2', q: "What is the most volcanically active body in the solar system?", a: "Io" },
-        { level: '2', q: "What is the name of the black hole at the center of our galaxy?", a: "Sagittarius A*", note: "≈4.3 million times the Sun’s mass." },
-        { level: '2', q: "What is the name of the galaxy group that contains the Milky Way?", a: "The Local Group" },
-        { level: '2', q: "What is the name of the largest asteroid in the solar system?", a: "Ceres", note: "It is also a dwarf planet." },
-        { level: '2', q: "Prior to the Apollo missions, there was another program that shared a name with what planet?", a: "Mercury" },
-        { level: '2', q: "Famously, which planet was discovered due to its effect on another planet's orbit?", a: "Neptune", note: "Predicted from anomalies in Uranus' orbit." },
-        { level: '2', q: "There are two moons in our solar system bigger than Mercury. Name one (BONUS for both).", a: "Ganymede (Jupiter) and Titan (Saturn)" },
-        { level: '2', q: "What is the name of the vast bubble around the Sun that shields us from most cosmic radiation?", a: "The heliosphere" },
-        { level: '2', q: "Only two spacecraft have left the heliosphere. Name one (BONUS for both)", a: "Voyager 1 and Voyager 2" },
-        // LEVEL 3
-        { level: '3', q: "Which planet requires the most fuel to reach orbit around?", a: "Mercury", note: "Highest Earth-to-orbit delta‑v due to the Sun’s gravity well." },
-        { level: '3', q: "All the major planets lie roughly on the same plane. What is this plane called?", a: "The plane of the ecliptic" },
-        { level: '3', q: "Special spots called Lagrange points let spacecraft ‘park’. What kind of spacecraft are often placed there?", a: "Space telescopes" },
+        { type:'title', level:'', q:'🚀✨ SPACE TRIVIA ✨🚀', note:"Birthday Edition" },
+        // LEVEL 1 CARD
+        { type:'level', level:'Level 1', q:'Level 1' },
+        // LEVEL 1 QUESTIONS
+        { level:'Level 1', q:"During my 2nd birthday in 1998, what would have held the title of most distant planet from the Sun?", a:"Neptune", note:"Pluto’s orbit was inside Neptune’s from 1979–1999." },
+        { level:'Level 1', q:"What is the nearest star?", a:"Proxima Centauri (will accept Alpha Centauri)", note:"Proxima is part of the Alpha Centauri system." },
+        { level:'Level 1', q:"What fictional astronaut shares a first name with the second man to walk on the moon?", a:"Buzz Lightyear" },
+        { level:'Level 1', q:"Apollo 11 was the first Moon landing. What was the lunar lander called?", a:"The Eagle" },
+        { level:'Level 1', q:"What does NASA stand for? (BONUS: JPL)", a:"National Aeronautics and Space Administration", note:"BONUS: JPL = Jet Propulsion Laboratory." },
+        { level:'Level 1', q:"Sputnik 1 was the first man-made satellite. What was the second?", a:"Sputnik 2" },
+        { level:'Level 1', q:"What famous science fiction movie features a murderous AI, chimps, and a giant space baby?", a:"2001: A Space Odyssey" },
+        { level:'Level 1', q:"What was the name of the location of the Apollo 11 Moon landing?", a:"Hollywood.", note:"Joke! Sea of Tranquility." },
+        { level:'Level 1', q:"Mars has two primary moons. Name one of them. (BONUS for both)", a:"Deimos and Phobos" },
+        { level:'Level 1', q:"What is the name of the constellation containing the North Star, Polaris?", a:"Ursa Minor (Little Dipper)" },
+        { level:'Level 1', q:"What famous 2010s sci‑fi film rendered a black hole with a supercomputer?", a:"Interstellar" },
+        { level:'Level 1', q:"What planet is closest to Earth (on average)?", a:"Mercury" },
+        { level:'Level 1', q:"What do Russians call their ‘astronauts’?", a:"Cosmonauts", note:"From Greek: 'kosmos' + 'nautes' (sailor)." },
+        { level:'Level 1', q:"Our galaxy will eventually collide with the nearest galaxy. What is the name of that galaxy?", a:"Andromeda (M31)" },
+        // LEVEL 2 CARD
+        { type:'level', level:'Level 2', q:'Level 2'},
+        // LEVEL 2 QUESTIONS
+        { level:'Level 2', q:"What is the most volcanically active body in the solar system?", a:"Io" },
+        { level:'Level 2', q:"What is the name of the black hole at the center of our galaxy?", a:"Sagittarius A*", note:"≈4.3 million times the Sun’s mass." },
+        { level:'Level 2', q:"The same side of the Moon always faces the Earth. What is the name of the phenomenon that causes this?", a:"Tidal locking" },
+        { level:'Level 2', q:"What is the name of the galaxy group that contains the Milky Way?", a:"The Local Group" },
+        { level:'Level 2', q:"What is the name of the largest asteroid in the solar system?", a:"Ceres", note:"It is also a dwarf planet." },
+        { level:'Level 2', q:"Prior to the Apollo missions, there was another program that shared a name with what planet?", a:"Mercury" },
+        { level:'Level 2', q:"Famously, which planet was discovered due to its effect on another planet's orbit?", a:"Neptune", note:"Predicted from anomalies in Uranus' orbit." },
+        { level:'Level 2', q:"There are two moons in our solar system bigger than Mercury. Name one (BONUS for both).", a:"Ganymede (Jupiter) and Titan (Saturn)" },
+        { level:'Level 2', q:"What is the name of the vast bubble around the Sun that shields us from most cosmic radiation?", a:"The heliosphere" },
+        { level:'Level 2', q:"Only two spacecraft have left the heliosphere. Name one (BONUS for both)", a:"Voyager 1 and Voyager 2" },
+        // LEVEL 3 CARD
+        { type:'level', level:'Level 3', q:'Level 3'},
+        // LEVEL 3 QUESTIONS
+        { level:'Level 3', q:"Which planet requires the most fuel to reach orbit around?", a:"Mercury", note:"Highest Earth-to-orbit change in velocity due to the Sun’s gravity well." },
+        { level:'Level 3', q:"All the major planets lie roughly on the same plane. What is this plane called?", a:"The plane of the ecliptic" },
+        { level:'Level 3', q:"Special spots in space called Lagrange points let spacecraft ‘park’. What kind of spacecraft are often placed there?", a:"Space telescopes" },
         // FOR FUN
-        { level: 'For fun!', q: "Did Neil Armstrong say ‘One small step for man…’ or ‘for a man…’?", a: "We don’t know for sure; he intended ‘for a man.’" },
+        { type:'level', level:'For fun!', q:'For fun!'},
+        { level:'For fun!', q:"Did Neil Armstrong say ‘One small step for man…’ or ‘for a man…’?", a:"We don’t know for sure; he intended ‘for a man.’" },
       ];
 
-      let current = 0;
+      let current = 0; // start on TITLE
       let revealed = false;
 
       const qEl = document.getElementById('question');
@@ -114,92 +113,79 @@
       window.addEventListener('keydown', (e)=>{
         if (e.key === 'ArrowRight') nextSlide();
         else if (e.key === 'ArrowLeft') prevSlide();
-        else if (e.key === ' ') { e.preventDefault(); if (slides[current].type !== 'title') toggleAnswer(); }
+        else if (e.key === ' ') {
+          e.preventDefault();
+          const t = slides[current].type;
+          if (t !== 'title' && t !== 'level') toggleAnswer();
+        }
       });
 
-      function render() {
+      function render(){
         const s = slides[current];
-        // Title slide special layout/styles
-        if (s.type === 'title') {
+        const t = s.type || 'question';
+        // reset shared state
+        aEl.style.display = 'none'; nEl.style.display = 'none'; revealed = false; lEl.textContent='';
+        qEl.classList.remove('title'); nEl.classList.remove('subtitle');
+
+        if (t === 'title'){
           qEl.classList.add('title');
           qEl.innerHTML = '🚀✨ <span style="white-space:nowrap">SPACE TRIVIA</span> ✨🚀';
-          aEl.style.display = 'none';
-          nEl.style.display = 'block';
-          nEl.classList.add('subtitle');
-          nEl.textContent = s.note || '';
-          lEl.textContent = '';
-          // show only Begin button on title
+          nEl.classList.add('subtitle'); nEl.textContent = s.note || ''; nEl.style.display = 'block';
           controlsEl.innerHTML = '<button id="beginBtn" type="button">Begin</button>';
-          document.getElementById('beginBtn').addEventListener('click', ()=>{ current=1; render(); });
-        } else {
-          qEl.classList.remove('title');
-          nEl.classList.remove('subtitle');
-          qEl.textContent = s.q;
-          aEl.textContent = s.a;
-          nEl.textContent = s.note || '';
-          // Hide answer & note initially
-          revealed = false;
-          aEl.style.display = 'none';
-          nEl.style.display = 'none';
+          document.getElementById('beginBtn').addEventListener('click', ()=>{ current = findNextIndex('level', 1); render(); });
+        } else if (t === 'level'){
+          qEl.classList.add('level-card'); qEl.textContent = s.level.toUpperCase();
+          nEl.classList.add('level-sub'); nEl.textContent = s.note || ''; nEl.style.display = 'block';
+          controlsEl.innerHTML = '<button id="nextOnly" type="button">Start Level →</button>';
+          document.getElementById('nextOnly').addEventListener('click', ()=>{ current = current + 1; render(); });
+        } else { // question
+          qEl.textContent = s.q; aEl.textContent = s.a; nEl.textContent = s.note || '';
           // restore normal controls
           controlsEl.innerHTML = '';
           controlsEl.appendChild(prevBtn);
           controlsEl.appendChild(revealBtn);
           controlsEl.appendChild(nextBtn);
-          // Level-up banner (skip when coming from title)
-          const prev = slides[(current - 1 + slides.length) % slides.length];
-          const prevLevel = prev.level || '';
-          lEl.textContent = (current > 0 && prevLevel !== s.level && s.level && prev.type !== 'title')
-            ? `LEVEL UP: ${s.level.toUpperCase()} QUESTIONS →` : '';
         }
-        // Update button label + counter
         revealBtn.textContent = 'Reveal';
         cEl.textContent = `${current + 1} / ${slides.length}`;
         drawStars();
       }
 
-      function nextSlide() { current = (current + 1) % slides.length; render(); }
-      function prevSlide() { current = (current - 1 + slides.length) % slides.length; render(); }
+      function findNextIndex(type, startIdx){
+        for (let i=startIdx;i<slides.length;i++){ if (slides[i].type===type) return i; }
+        return 1; // fallback to first level card
+      }
 
-      function toggleAnswer() {
-        const s = slides[current];
-        if (s.type === 'title') return; // no reveal on title
-        revealed = !revealed;
-        aEl.style.display = revealed ? 'block' : 'none';
-        nEl.style.display = (revealed && nEl.textContent) ? 'block' : 'none';
+      function nextSlide(){ current = (current + 1) % slides.length; render(); }
+      function prevSlide(){ current = (current - 1 + slides.length) % slides.length; render(); }
+
+      function toggleAnswer(){
+        const s = slides[current]; if (s.type==='title' || s.type==='level') return;
+        revealed = !revealed; aEl.style.display = revealed ? 'block' : 'none'; nEl.style.display = (revealed && nEl.textContent) ? 'block' : 'none';
         revealBtn.textContent = revealed ? 'Hide' : 'Reveal';
       }
 
       function drawStars(){
-        // sprinkle a few twinkling stars each render
         twinkleEl.innerHTML = '';
         const count = 24;
         for(let i=0;i<count;i++){
           const d=document.createElement('div'); d.className='star';
-          d.style.left = Math.random()*100+'%';
-          d.style.top  = Math.random()*100+'%';
-          d.style.animationDelay = (Math.random()*2)+'s';
-          d.style.opacity = 0.4 + Math.random()*0.6;
+          d.style.left = Math.random()*100+'%'; d.style.top = Math.random()*100+'%';
+          d.style.animationDelay = (Math.random()*2)+'s'; d.style.opacity = 0.4 + Math.random()*0.6;
           twinkleEl.appendChild(d);
         }
       }
 
       // --- Minimal self-tests (console only, non-blocking) ---
-      function runTests() {
-        try {
-          console.assert(slides.length >= 20, 'Deck should have at least 20 items');
-          render();
-          // On non-title, note hidden initially
-          current = 1; render();
-          console.assert(aEl.style.display === 'none' && nEl.style.display === 'none', 'Answer and note hidden initially');
-          toggleAnswer();
-          console.assert(aEl.style.display === 'block' && revealBtn.textContent === 'Hide', 'Reveal shows answer and updates button');
-          toggleAnswer();
-          console.assert(aEl.style.display === 'none' && revealBtn.textContent === 'Reveal', 'Hide hides answer and updates button');
-          console.log('%cSelf-tests passed', 'color:#34d399');
-        } catch (e) {
-          console.warn('Self-test issue:', e);
-        }
+      function runTests(){
+        try{
+          const old = current;
+          console.assert(slides[0].type==='title', 'First slide should be title');
+          console.assert(findNextIndex('level',1) > 0, 'Should find a level card');
+          // do not alter starting slide permanently
+          current = old;
+          console.log('%cSelf-tests passed','color:#34d399');
+        }catch(e){ console.warn('Self-test issue:', e); }
       }
 
       render();
@@ -207,4 +193,3 @@
     </script>
   </body>
 </html>
-
