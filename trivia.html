@@ -5,44 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Space Trivia Night</title>
     <style>
+      :root{
+        --bg:#0f172a; --card:#111827; --border:#334155; --text:#f1f5f9; --muted:#94a3b8; --accent:#3b82f6; --gold:#facc15; --answer:#38bdf8;
+      }
+      html,body{height:100%}
       body {
-        margin: 0;
-        padding: 0;
+        margin: 0; padding: 0; background: var(--bg); color: var(--text);
         font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-        background: #0f172a;
-        color: #f1f5f9;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        min-height: 100vh; overflow:hidden;
       }
-      #slide {
-        width: min(92vw, 880px);
-        background: #111827;
-        border: 2px solid #334155;
-        border-radius: 18px;
-        padding: clamp(16px, 4vw, 32px);
-        box-shadow: 0 0 24px rgba(0,0,0,0.35);
-        text-align: center;
-      }
-      .level-up { color: #facc15; font-weight: 800; margin: 0 0 10px; letter-spacing: .5px; }
+      #slide { width: min(92vw, 880px); background: var(--card); border: 2px solid var(--border);
+        border-radius: 18px; padding: clamp(16px, 4vw, 32px); box-shadow: 0 0 24px rgba(0,0,0,0.35);
+        text-align: center; position:relative; overflow:hidden; }
+
+      .level-up { color: var(--gold); font-weight: 800; margin: 0 0 10px; letter-spacing: .5px; }
       .question { font-size: clamp(20px, 3.2vw, 34px); line-height: 1.25; margin: 6px 0 10px; }
-      .answer   { font-size: clamp(18px, 2.6vw, 28px); line-height: 1.3; margin-top: 12px; color: #38bdf8; display: none; }
-      .note     { font-size: clamp(14px, 2vw, 18px); color: #94a3b8; margin-top: 8px; font-style: italic; display: none; }
+      .answer   { font-size: clamp(18px, 2.6vw, 28px); line-height: 1.3; margin-top: 12px; color: var(--answer); display: none; }
+      .note     { font-size: clamp(16px, 2.4vw, 22px); color: var(--text); margin-top: 8px; font-style: normal; display: none; }
       .controls { margin-top: 20px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
-      button { padding: 10px 16px; background: #3b82f6; color: #fff; border: 0; border-radius: 10px; font-size: 16px; cursor: pointer; }
+      button { padding: 10px 16px; background: var(--accent); color: #fff; border: 0; border-radius: 10px; font-size: 16px; cursor: pointer; }
       button:active { transform: scale(.98); }
-      .muted { opacity: .85; }
+      .muted { opacity: .85; color: var(--muted); }
+
+      /* Title slide */
+      .title { font-size: clamp(32px, 6vw, 56px); line-height:1.05; font-weight: 900; letter-spacing:.5px; }
+      .subtitle { font-size: clamp(16px, 3vw, 22px); margin-top: 10px; color: var(--muted); }
+
+      /* simple twinkle */
+      .twinkle { position:absolute; inset:0; pointer-events:none; }
+      .star { position:absolute; width:3px; height:3px; background:#fff; border-radius:50%; opacity:.7; animation: twinkle 2.2s infinite ease-in-out; }
+      @keyframes twinkle { 0%,100%{ transform:scale(0.6); opacity:.5 } 50%{ transform:scale(1.4); opacity:1 } }
     </style>
   </head>
   <body>
     <div id="slide">
+      <div class="twinkle" id="twinkle"></div>
       <div id="level" class="level-up"></div>
       <div class="question" id="question"></div>
       <div class="answer" id="answer"></div>
       <div class="note" id="note"></div>
-      <div class="controls">
+      <div class="controls" id="controls">
         <button id="prevBtn" type="button">← Prev</button>
         <button id="revealBtn" type="button">Reveal</button>
         <button id="nextBtn" type="button">Next →</button>
@@ -51,40 +54,42 @@
     </div>
 
     <script>
-      // Full deck, difficulty-sorted with implicit level-up slide
+      // --- Slides (includes title slide) ---
       const slides = [
-        // EASY
-        { level: 'Easy', q: "Most volcanically active body in the solar system?", a: "Io" },
-        { level: 'Easy', q: "What planet is closest to Earth (on average)?", a: "Mercury" },
-        { level: 'Easy', q: "What is the nearest star?", a: "Proxima Centauri (will accept Alpha Centauri)" },
-        { level: 'Easy', q: "Our galaxy will eventually collide with the nearest galaxy. What is the name of that galaxy?", a: "Andromeda (M31)" },
-        { level: 'Easy', q: "The same side of the Moon ways faces the Earth. What is the name of the phenomenon that causes this?", a: "Tidal locking" },
-        { level: 'Easy', q: "Mars has two primary moons. Name one of them. (BONUS for both)", a: "Deimos and Phobos" },
-        { level: 'Easy', q: "Apollo 11 was the first Moon landing. What was the lunar lander called?", a: "The Eagle" },
-        { level: 'Easy', q: "What does NASA stand for? (BONUS: JPL)", a: "National Aeronautics and Space Administration", note: "BONUS: JPL = Jet Propulsion Laboratory." },
-        { level: 'Easy', q: "Sputnik 1 was the first man-made satellite. What was the second?", a: "Sputnik 2" },
-        { level: 'Easy', q: "What fictional astronaut shares a first name with the second man to walk on the moon?", a: "Buzz Lightyear" },
-        { level: 'Easy', q: "What famous science fiction movie features a murderous AI, chimps, and a giant space baby?", a: "2001: A Space Odyssey" },
-        // MEDIUM
-        { level: 'Medium', q: "What is the name of the black hole at the center of our galaxy?", a: "Sagittarius A*", note: "4.297 million times more massive than the Sun." },
-        { level: 'Medium', q: "Russian word for their ‘astronauts’?", a: "Cosmonaut", note: "From Greek: 'kosmos' + 'nautes' (sailor)." },
-        { level: 'Medium', q: "What is the name of the galaxy group that contains the Milky Way?", a: "The Local Group" },
-        { level: 'Medium', q: "What is the name of the largest asteroid in the solar system?", a: "Ceres", note: "It is also a dwarf planet." },
-        { level: 'Medium', q: "Prior to the Apollo missions, there was another program that shared a name with what planet?", a: "Mercury" },
-        { level: 'Medium', q: "What famous 2010s sci‑fi film rendered a black hole with a supercomputer?", a: "Interstellar" },
-        { level: 'Medium', q: "Famously, which planet was discovered due to its effect on another planet's orbit?", a: "Neptune", note: "It generated an unexplained wobble in Uranus' orbit." },
-        { level: 'Medium', q: "There are two moons in our solar system bigger than Mercury. Name one (BONUS for both).", a: "Ganymede (Jupiter) and Titan (Saturn)" },
-        { level: 'Medium', q: "Which planet requires the most fuel to reach orbit around?", a: "Mercury", note: "Sun's gravity well + shedding heliocentric energy." },
-        { level: 'Medium', q: "What was the name of the location of the Apollo 11 Moon landing?", a: "Hollywood." },
-        { level: 'Medium', q: "What was the name of the location of the Apollo 11 Moon landing?", a: "Sea of Tranquility" },
-        { level: 'Medium', q: "Only two spacecraft have left the heliosphere. Name one (BONUS for both)", a: "Voyager 1 and Voyager 2" },
-        { level: 'Medium', q: "What is the name of the constellation containing the North Star, Polaris?", a: "Ursa Minor (Little Dipper)" },
-        { level: 'Medium', q: "All the major planets lie roughly on the same plane. What is this plane called?", a: "The plane of the ecliptic" },
-        { level: 'Medium', q: "During my 2nd birthday in 199&, what would have held the title of most distant planet from the Sun?", a: "Neptune", note: "Pluto’s orbit was inside Neptune’s from 1979–1999." },
-        { level: 'Medium', q: "Special spots called Lagrange points let spacecraft ‘park’. What kind of spacecraft are often placed there?", a: "Space telescopes" },
-        { level: 'Medium', q: "Did Neil Armstrong say ‘One small step for man…’ or ‘for a man…’?", a: "We don’t know for sure; he intended ‘for a man.’" },
-        // HARD
-        { level: 'Hard', q: "What is the name of the vast bubble around the Sun that shields us from most cosmic radiation?", a: "The heliosphere" }
+        // TITLE
+        { type: 'title', level: '', q: '🚀✨ SPACE TRIVIA ✨🚀', a: 'Tap Reveal to practice… or Next to begin!', note: "Birthday Edition" },
+        // 1
+        { level: '1', q: "During my 2nd birthday in 1998, what would have held the title of most distant planet from the Sun?", a: "Neptune", note: "Pluto’s orbit was inside Neptune’s from 1979–1999." },
+        { level: '1', q: "What is the nearest star?", a: "Proxima Centauri (will accept Alpha Centauri)", note: "Proxima is part of the Alpha Centauri system." },
+        { level: '1', q: "What fictional astronaut shares a first name with the second man to walk on the moon?", a: "Buzz Lightyear" },
+        { level: '1', q: "Our galaxy will eventually collide with the nearest galaxy. What is the name of that galaxy?", a: "Andromeda (M31)" },
+        { level: '1', q: "The same side of the Moon always faces the Earth. What is the name of the phenomenon that causes this?", a: "Tidal locking" },
+        { level: '1', q: "Mars has two primary moons. Name one of them. (BONUS for both)", a: "Deimos and Phobos" },
+        { level: '1', q: "Apollo 11 was the first Moon landing. What was the lunar lander called?", a: "The Eagle" },
+        { level: '1', q: "What does NASA stand for? (BONUS: JPL)", a: "National Aeronautics and Space Administration", note: "BONUS: JPL = Jet Propulsion Laboratory." },
+        { level: '1', q: "Sputnik 1 was the first man-made satellite. What was the second?", a: "Sputnik 2" },
+        { level: '1', q: "What famous science fiction movie features a murderous AI, chimps, and a giant space baby?", a: "2001: A Space Odyssey" },
+        { level: '1', q: "What was the name of the location of the Apollo 11 Moon landing?", a: "Hollywood.", note: "Joke! Sea of Tranquility." },
+        { level: '1', q: "What is the name of the constellation containing the North Star, Polaris?", a: "Ursa Minor (Little Dipper)" },
+        { level: '1', q: "What famous 2010s sci‑fi film rendered a black hole with a supercomputer?", a: "Interstellar" },
+        { level: '1', q: "What planet is closest to Earth (on average)?", a: "Mercury" },
+        { level: '1', q: "What do Russians call their ‘astronauts’?", a: "Cosmonauts", note: "From Greek: 'kosmos' + 'nautes' (sailor)." },
+        // LEVEL 2
+        { level: '2', q: "What is the most volcanically active body in the solar system?", a: "Io" },
+        { level: '2', q: "What is the name of the black hole at the center of our galaxy?", a: "Sagittarius A*", note: "≈4.3 million times the Sun’s mass." },
+        { level: '2', q: "What is the name of the galaxy group that contains the Milky Way?", a: "The Local Group" },
+        { level: '2', q: "What is the name of the largest asteroid in the solar system?", a: "Ceres", note: "It is also a dwarf planet." },
+        { level: '2', q: "Prior to the Apollo missions, there was another program that shared a name with what planet?", a: "Mercury" },
+        { level: '2', q: "Famously, which planet was discovered due to its effect on another planet's orbit?", a: "Neptune", note: "Predicted from anomalies in Uranus' orbit." },
+        { level: '2', q: "There are two moons in our solar system bigger than Mercury. Name one (BONUS for both).", a: "Ganymede (Jupiter) and Titan (Saturn)" },
+        { level: '2', q: "What is the name of the vast bubble around the Sun that shields us from most cosmic radiation?", a: "The heliosphere" },
+        { level: '2', q: "Only two spacecraft have left the heliosphere. Name one (BONUS for both)", a: "Voyager 1 and Voyager 2" },
+        // LEVEL 3
+        { level: '3', q: "Which planet requires the most fuel to reach orbit around?", a: "Mercury", note: "Highest Earth-to-orbit delta‑v due to the Sun’s gravity well." },
+        { level: '3', q: "All the major planets lie roughly on the same plane. What is this plane called?", a: "The plane of the ecliptic" },
+        { level: '3', q: "Special spots called Lagrange points let spacecraft ‘park’. What kind of spacecraft are often placed there?", a: "Space telescopes" },
+        // FOR FUN
+        { level: 'For fun!', q: "Did Neil Armstrong say ‘One small step for man…’ or ‘for a man…’?", a: "We don’t know for sure; he intended ‘for a man.’" },
       ];
 
       let current = 0;
@@ -98,6 +103,8 @@
       const revealBtn = document.getElementById('revealBtn');
       const prevBtn = document.getElementById('prevBtn');
       const nextBtn = document.getElementById('nextBtn');
+      const controlsEl = document.getElementById('controls');
+      const twinkleEl = document.getElementById('twinkle');
 
       prevBtn.addEventListener('click', prevSlide);
       nextBtn.addEventListener('click', nextSlide);
@@ -107,57 +114,86 @@
       window.addEventListener('keydown', (e)=>{
         if (e.key === 'ArrowRight') nextSlide();
         else if (e.key === 'ArrowLeft') prevSlide();
-        else if (e.key === ' ') { e.preventDefault(); toggleAnswer(); }
+        else if (e.key === ' ') { e.preventDefault(); if (slides[current].type !== 'title') toggleAnswer(); }
       });
 
       function render() {
         const s = slides[current];
-        qEl.textContent = s.q;
-        aEl.textContent = s.a;
-        nEl.textContent = s.note || '';
-        // Always hide answer & note initially
-        revealed = false;
-        aEl.style.display = 'none';
-        nEl.style.display = 'none';
-        // Show level-up banner when transitioning to a new level
-        const prevLevel = slides[(current - 1 + slides.length) % slides.length].level;
-        lEl.textContent = (current > 0 && prevLevel !== s.level) ? `LEVEL UP: ${s.level.toUpperCase()} QUESTIONS →` : '';
+        // Title slide special layout/styles
+        if (s.type === 'title') {
+          qEl.classList.add('title');
+          qEl.innerHTML = '🚀✨ <span style="white-space:nowrap">SPACE TRIVIA</span> ✨🚀';
+          aEl.style.display = 'none';
+          nEl.style.display = 'block';
+          nEl.classList.add('subtitle');
+          nEl.textContent = s.note || '';
+          lEl.textContent = '';
+          // show only Begin button on title
+          controlsEl.innerHTML = '<button id="beginBtn" type="button">Begin</button>';
+          document.getElementById('beginBtn').addEventListener('click', ()=>{ current=1; render(); });
+        } else {
+          qEl.classList.remove('title');
+          nEl.classList.remove('subtitle');
+          qEl.textContent = s.q;
+          aEl.textContent = s.a;
+          nEl.textContent = s.note || '';
+          // Hide answer & note initially
+          revealed = false;
+          aEl.style.display = 'none';
+          nEl.style.display = 'none';
+          // restore normal controls
+          controlsEl.innerHTML = '';
+          controlsEl.appendChild(prevBtn);
+          controlsEl.appendChild(revealBtn);
+          controlsEl.appendChild(nextBtn);
+          // Level-up banner (skip when coming from title)
+          const prev = slides[(current - 1 + slides.length) % slides.length];
+          const prevLevel = prev.level || '';
+          lEl.textContent = (current > 0 && prevLevel !== s.level && s.level && prev.type !== 'title')
+            ? `LEVEL UP: ${s.level.toUpperCase()} QUESTIONS →` : '';
+        }
         // Update button label + counter
         revealBtn.textContent = 'Reveal';
         cEl.textContent = `${current + 1} / ${slides.length}`;
+        drawStars();
       }
 
-      function nextSlide() {
-        current = (current + 1) % slides.length;
-        render();
-      }
-
-      function prevSlide() {
-        current = (current - 1 + slides.length) % slides.length;
-        render();
-      }
+      function nextSlide() { current = (current + 1) % slides.length; render(); }
+      function prevSlide() { current = (current - 1 + slides.length) % slides.length; render(); }
 
       function toggleAnswer() {
+        const s = slides[current];
+        if (s.type === 'title') return; // no reveal on title
         revealed = !revealed;
         aEl.style.display = revealed ? 'block' : 'none';
-        // Fun fact/note should only show with the answer
         nEl.style.display = (revealed && nEl.textContent) ? 'block' : 'none';
-        // Keep button label in sync with state
         revealBtn.textContent = revealed ? 'Hide' : 'Reveal';
+      }
+
+      function drawStars(){
+        // sprinkle a few twinkling stars each render
+        twinkleEl.innerHTML = '';
+        const count = 24;
+        for(let i=0;i<count;i++){
+          const d=document.createElement('div'); d.className='star';
+          d.style.left = Math.random()*100+'%';
+          d.style.top  = Math.random()*100+'%';
+          d.style.animationDelay = (Math.random()*2)+'s';
+          d.style.opacity = 0.4 + Math.random()*0.6;
+          twinkleEl.appendChild(d);
+        }
       }
 
       // --- Minimal self-tests (console only, non-blocking) ---
       function runTests() {
         try {
-          console.assert(slides.length >= 25, 'Deck should have at least 25 items');
-          console.assert(typeof slides[0].q === 'string', 'Slide has a question');
-          // Note is hidden on initial render
+          console.assert(slides.length >= 20, 'Deck should have at least 20 items');
           render();
+          // On non-title, note hidden initially
+          current = 1; render();
           console.assert(aEl.style.display === 'none' && nEl.style.display === 'none', 'Answer and note hidden initially');
-          // Toggle shows answer and changes button label
           toggleAnswer();
           console.assert(aEl.style.display === 'block' && revealBtn.textContent === 'Hide', 'Reveal shows answer and updates button');
-          // Toggle again hides
           toggleAnswer();
           console.assert(aEl.style.display === 'none' && revealBtn.textContent === 'Reveal', 'Hide hides answer and updates button');
           console.log('%cSelf-tests passed', 'color:#34d399');
@@ -171,3 +207,4 @@
     </script>
   </body>
 </html>
+
