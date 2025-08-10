@@ -50,46 +50,46 @@
       // --- Slides: Title, explicit Level cards, then questions ---
       const slides = [
         // TITLE
-        { type:'title', level:'', q:'🚀✨ SPACE TRIVIA ✨🚀', note:"Birthday Edition" },
-        // LEVEL 1 CARD
-        { type:'level', level:'Level 1', q:'Level 1' },
+        { type:'title', level:'Main', q:'🚀✨ SPACE TRIVIA ✨🚀', note:"Birthday Edition" },
+        { type:'level', level:'Main', q:'Main'},
         // LEVEL 1 QUESTIONS
-        { level:'Level 1', q:"During my 2nd birthday in 1998, what would have held the title of most distant planet from the Sun?", a:"Neptune", note:"Pluto’s orbit was inside Neptune’s from 1979–1999." },
-        { level:'Level 1', q:"What is the nearest star to the Sun?", a:"Proxima Centauri (will accept Alpha Centauri)", note:"Proxima is part of the Alpha Centauri system." },
-        { level:'Level 1', q:"What fictional astronaut shares a first name with the second man to walk on the moon?", a:"Buzz Lightyear" },
-        { level:'Level 1', q:"Apollo 11 was the first Moon landing. What was the lunar lander called?", a:"The Eagle" },
-        { level:'Level 1', q:"What does NASA stand for? (BONUS: JPL)", a:"National Aeronautics and Space Administration", note:"BONUS: JPL = Jet Propulsion Laboratory." },
-        { level:'Level 1', q:"Sputnik 1 was the first man-made satellite. What was the second?", a:"Sputnik 2" },
-        { level:'Level 1', q:"What famous science fiction movie features a murderous AI, chimps, and a giant space baby?", a:"2001: A Space Odyssey" },
-        { level:'Level 1', q:"What was the name of the location of the Apollo 11 Moon landing?", a:"Hollywood.", note:"Joke! Sea of Tranquility." },
-        { level:'Level 1', q:"Mars has two primary moons. Name one of them. (BONUS for both)", a:"Deimos and Phobos" },
-        { level:'Level 1', q:"What is the name of the constellation containing the North Star, Polaris?", a:"Ursa Minor (Little Dipper)" },
-        { level:'Level 1', q:"What famous 2010s sci‑fi film rendered a black hole with a supercomputer?", a:"Interstellar" },
-        { level:'Level 1', q:"What planet is closest to Earth (on average)?", a:"Mercury" },
-        { level:'Level 1', q:"What do Russians call their ‘astronauts’?", a:"Cosmonauts", note:"From Greek: 'kosmos' + 'nautes' (sailor)." },
-        { level:'Level 1', q:"Our galaxy will eventually collide with the nearest galaxy. What is the name of that galaxy?", a:"Andromeda (M31)" },
+        { level:'Main', q:"During my 2nd birthday in 1998, what would have held the title of most distant planet from the Sun?", a:"Neptune", note:"Pluto’s orbit was inside Neptune’s from 1979–1999." },
+        { level:'Main', q:"What is the nearest star to the Sun?", a:"Proxima Centauri (will accept Alpha Centauri)", note:"Proxima is part of the Alpha Centauri system." },
+        { level:'Main', q:"What fictional astronaut shares a first name with the second man to walk on the moon?", a:"Buzz Lightyear" },
+        { level:'Main', q:"Apollo 11 was the first Moon landing. What was the lunar lander called?", a:"The Eagle" },
+        { level:'Main', q:"What does NASA stand for? (BONUS: JPL)", a:"National Aeronautics and Space Administration", note:"BONUS: JPL = Jet Propulsion Laboratory." },
+        { level:'Main', q:"Sputnik 1 was the first man-made satellite. What was the second?", a:"Sputnik 2" },
+        { level:'Main', q:"What famous science fiction movie features a murderous AI, chimps, and a giant space baby?", a:"2001: A Space Odyssey" },
+        { level:'Main', q:"What was the name of the location of the Apollo 11 Moon landing?", a:"Hollywood.", note:"Joke! Sea of Tranquility." },
+        { level:'Main', q:"What is the name of the constellation containing the North Star, Polaris?", a:"Ursa Minor (Little Dipper)" },
+        { level:'Main', q:"What planet is closest to Earth (on average)?", a:"Mercury" },
+        { level:'Main', q:"What do Russians call their 'astronauts'?", a:"Cosmonauts", note:"From Greek: 'kosmos' + 'nautes' (sailor)." },
         // LEVEL 2 CARD
-        { type:'level', level:'Level 2', q:'Level 2'},
+        //{ type:'level', level:'Level 2', q:'Level 2'},
         // LEVEL 2 QUESTIONS
-        { level:'Level 2', q:"What is the most volcanically active body in the solar system?", a:"Io" },
-        { level:'Level 2', q:"What is the name of the black hole at the center of our galaxy?", a:"Sagittarius A*", note:"≈4.3 million times the Sun’s mass." },
-        { level:'Level 2', q:"The same side of the Moon always faces the Earth. What is the name of the phenomenon that causes this?", a:"Tidal locking" },
-        { level:'Level 2', q:"What is the name of the galaxy group that contains the Milky Way?", a:"The Local Group" },
-        { level:'Level 2', q:"What is the name of the largest asteroid in the solar system?", a:"Ceres", note:"It is also a dwarf planet." },
-        { level:'Level 2', q:"Prior to the Apollo missions, there was another program that shared a name with what planet?", a:"Mercury" },
-        { level:'Level 2', q:"Famously, which planet was discovered due to its effect on another planet's orbit?", a:"Neptune", note:"Predicted from anomalies in Uranus' orbit." },
-        { level:'Level 2', q:"There are two moons in our solar system bigger than Mercury. Name one (BONUS for both).", a:"Ganymede (Jupiter) and Titan (Saturn)" },
-        { level:'Level 2', q:"What is the name of the vast bubble around the Sun that shields us from most cosmic radiation?", a:"The heliosphere" },
-        { level:'Level 2', q:"Only two spacecraft have left the heliosphere. Name one (BONUS for both)", a:"Voyager 1 and Voyager 2" },
         // LEVEL 3 CARD
-        { type:'level', level:'Level 3', q:'Level 3'},
+        //{ type:'level', level:'Level 3', q:'Level 3'},
         // LEVEL 3 QUESTIONS
-        { level:'Level 3', q:"Which planet requires the most fuel to reach orbit around?", a:"Mercury", note:"Highest Earth-to-orbit change in velocity due to the Sun’s gravity well." },
-        { level:'Level 3', q:"All the major planets lie roughly on the same plane. What is this plane called?", a:"The plane of the ecliptic" },
-        { level:'Level 3', q:"Special spots in space called Lagrange points let spacecraft ‘park’. What kind of spacecraft are often placed there?", a:"Space telescopes" },
         // FOR FUN
         { type:'level', level:'For fun!', q:'For fun!'},
         { level:'For fun!', q:"Did Neil Armstrong say ‘One small step for man…’ or ‘for a man…’?", a:"We don’t know for sure; he intended ‘for a man.’" },
+        // BONUS
+        { type:'level', level:'BONUS', q:'BONUS'},
+        { level:'BONUS', q:"Our galaxy will eventually collide with the nearest galaxy. What is the name of that galaxy?", a:"Andromeda (M31)" },
+        { level:'BONUS', q:"Prior to the Apollo missions, there was another program that shared a name with what planet?", a:"Mercury" },
+        { level:'BONUS', q:"Famously, which planet was discovered due to its effect on another planet's orbit?", a:"Neptune", note:"Predicted from anomalies in Uranus' orbit." },
+        { level:'BONUS', q:"Mars has two primary moons. Name one of them. (BONUS for both)", a:"Deimos and Phobos" },
+        { level:'BONUS', q:"What is the most volcanically active body in the solar system?", a:"Io" },
+        { level:'BONUS', q:"What is the name of the black hole at the center of our galaxy?", a:"Sagittarius A*", note:"≈4.3 million times the Sun’s mass." },
+        { level:'BONUS', q:"The same side of the Moon always faces the Earth. What is the name of the phenomenon that causes this?", a:"Tidal locking" },
+        { level:'BONUS', q:"What is the name of the galaxy group that contains the Milky Way?", a:"The Local Group" },
+        { level:'BONUS', q:"What is the name of the largest asteroid in the solar system?", a:"Ceres", note:"It is also a dwarf planet." },
+        { level:'BONUS', q:"There are two moons in our solar system bigger than Mercury. Name one (BONUS for both).", a:"Ganymede (Jupiter) and Titan (Saturn)" },
+        { level:'BONUS', q:"What is the name of the vast bubble around the Sun that shields us from most cosmic radiation?", a:"The heliosphere" },
+        { level:'BONUS', q:"Only two spacecraft have left the heliosphere. Name one (BONUS for both)", a:"Voyager 1 and Voyager 2" },
+        { level:'BONUS', q:"Which planet requires the most fuel to reach orbit around?", a:"Mercury", note:"Highest Earth-to-orbit change in velocity due to the Sun’s gravity well." },
+        { level:'BONUS', q:"All the major planets lie roughly on the same plane. What is this plane called?", a:"The plane of the ecliptic" },
+        { level:'BONUS', q:"Special spots in space called Lagrange points let spacecraft ‘park’. What kind of spacecraft are often placed there?", a:"Space telescopes" },
       ];
 
       let current = 0; // start on TITLE
