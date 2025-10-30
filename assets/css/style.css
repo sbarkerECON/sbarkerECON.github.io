@@ -1,0 +1,148 @@
+:root {
+  --font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --color-background: #f8f8f8;
+  --color-text: #222;
+  --color-accent: #1f4b99;
+  --color-muted: #666;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.6;
+}
+
+.container {
+  width: min(90%, 900px);
+  margin: 0 auto;
+}
+
+.site-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.site-header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.5rem 0;
+}
+
+.site-title a {
+  text-decoration: none;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.site-nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--color-muted);
+  padding-bottom: 0.25rem;
+  position: relative;
+}
+
+.site-nav a.active,
+.site-nav a:hover {
+  color: var(--color-accent);
+}
+
+.site-nav a.active::after,
+.site-nav a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.35rem;
+  height: 2px;
+  background-color: var(--color-accent);
+}
+
+.site-content {
+  padding: 3rem 0 4rem;
+  text-align: center;
+}
+
+.site-content h1,
+.site-content h2,
+.site-content h3 {
+  margin-top: 0;
+  color: var(--color-text);
+}
+
+.intro-photo {
+  width: min(300px, 80%);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.section p {
+  margin: 0 auto 1.25rem;
+  max-width: 70ch;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.6rem 1.6rem;
+  border-radius: 999px;
+  background-color: var(--color-accent);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(31, 75, 153, 0.3);
+}
+
+.link-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem auto 0;
+  max-width: 60ch;
+}
+
+.link-list li {
+  margin-bottom: 1rem;
+}
+
+.link-list a {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link-list a:hover {
+  text-decoration: underline;
+}
+
+.site-footer {
+  background-color: #ffffff;
+  border-top: 1px solid #e0e0e0;
+  padding: 1.5rem 0;
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
