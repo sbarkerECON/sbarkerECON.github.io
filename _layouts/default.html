@@ -15,18 +15,23 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="{{ '/assets/images/favicon-sb.svg' | relative_url }}"
+    />
   </head>
   <body>
     <header class="site-header">
       <div class="container">
-        <div class="site-title">
-          <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-        </div>
         <nav class="site-nav">
           <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">Home</a>
           <a href="{{ '/research/' | relative_url }}" class="{% if page.url == '/research/' %}active{% endif %}">Research</a>
           <a href="{{ '/teaching/' | relative_url }}" class="{% if page.url == '/teaching/' %}active{% endif %}">Teaching</a>
         </nav>
+        {% if page.url == '/' %}
+        <div class="home-name">{{ site.title }}</div>
+        {% endif %}
       </div>
     </header>
     <main class="site-content">
