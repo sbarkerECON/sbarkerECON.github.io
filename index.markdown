@@ -5,7 +5,7 @@ permalink: /
 ---
 
 <section class="section home-intro">
-  <img src="{{ '/assets/images/home-photo-placeholder.svg' | relative_url }}" alt="Portrait" class="intro-photo" />
+  <img src="{{ '/assets/images/headshot.jpeg' | relative_url }}" alt="Portrait" class="intro-photo" />
   <div class="intro-content">
     <h1>Welcome</h1>
     <p>
