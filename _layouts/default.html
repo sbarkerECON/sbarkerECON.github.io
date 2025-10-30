@@ -24,14 +24,14 @@
   <body>
     <header class="site-header">
       <div class="container">
+        {% if page.url == '/' %}
+        <div class="home-name">{{ site.title }}</div>
+        {% endif %}
         <nav class="site-nav">
           <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">Home</a>
           <a href="{{ '/research/' | relative_url }}" class="{% if page.url == '/research/' %}active{% endif %}">Research</a>
           <a href="{{ '/teaching/' | relative_url }}" class="{% if page.url == '/teaching/' %}active{% endif %}">Teaching</a>
         </nav>
-        {% if page.url == '/' %}
-        <div class="home-name">{{ site.title }}</div>
-        {% endif %}
       </div>
     </header>
     <main class="site-content">

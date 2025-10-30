@@ -4,8 +4,8 @@
   --font-heading: "IBM Plex Sans", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont,
     "Helvetica Neue", sans-serif;
   --font-name: "Playfair Display", "Times New Roman", serif;
-  --color-background: #fdf7ec;
-  --color-surface: #fdf7ec;
+  --color-background: #fefaf2;
+  --color-surface: #fefaf2;
   --color-text: #2f2a24;
   --color-accent: #7b5b3e;
   --color-accent-strong: #5e4128;
@@ -79,12 +79,13 @@ body {
 }
 
 .home-name {
-  font-size: clamp(1.8rem, 2vw + 1.2rem, 2.4rem);
+  font-size: clamp(2.4rem, 2.8vw + 1.6rem, 3.4rem);
   font-family: var(--font-name);
   font-weight: 600;
   letter-spacing: 0.04em;
   color: var(--color-text);
   text-align: center;
+  margin-bottom: 0.25rem;
 }
 
 .site-content {
