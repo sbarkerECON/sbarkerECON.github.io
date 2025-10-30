@@ -9,14 +9,13 @@ permalink: /
   <div class="intro-content">
     <h1>Welcome</h1>
     <p>
-      Thank you for visiting. I am building this space to share my work, teaching
-      materials, and updates. A personal photograph will appear here once it is
-      ready.
+    I am an Economics PhD Candidate at the University of North Carolina at
+    Chapel Hill. My interests are economics of education, labor economics,
+    and applied microeconometrics. My current work focuses on the
+    measurement human capital in education data sets, determinants of
+    college attendance and major choice.
     </p>
     <a class="button" href="https://www.dropbox.com/s/placeholder/cv.pdf?dl=0" target="_blank" rel="noopener">Download CV</a>
   </div>
 </section>
 
-<ul class="link-list">
-  <li><a href="https://www.dropbox.com/s/placeholder/home-document.pdf?dl=0" target="_blank" rel="noopener">Featured document on Dropbox</a></li>
-</ul>
