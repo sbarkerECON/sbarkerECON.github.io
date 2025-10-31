@@ -15,7 +15,7 @@ permalink: /research/
   <h2>Working Papers</h2>
   <div class="paper-list">
     <article class="paper">
-      <h3>Teacher Quality in High School using Course Grades: A Dynamic Factor Model in Network Data (Job Market Paper)</h3>
+      <h3> Measuring Human Capital and Teacher Value-Added with Course Grades (JMP)</h3>
       <p class="authors"><strong>Authors:</strong> Samuel Barker </p>
       <p class="abstract"><strong>Abstract:</strong> [] </p>
     </article>
