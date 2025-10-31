@@ -7,7 +7,7 @@ permalink: /research/
 <section class="section">
   <h1>Research</h1>
   <p>
-    Explore my current research portfolio, including completed working papers and projects that are actively in development.
+    Explore my current research portfolio.
   </p>
 </section>
 
@@ -53,7 +53,7 @@ permalink: /research/
       <!--<p class="abstract"><strong>Abstract:</strong> Description of the ongoing project's goals, current status, and expected contributions upon completion.</p> -->
     </article>
     <article class="paper">
-      <h3>Beliefs from High School Grades and College Attendance</h3>
+      <h3>High School Grades and College Attendance: The Role of Beliefs</h3>
       <p class="authors"><strong>Authors:</strong> Samuel Barker</p>
       <!--<p class="abstract"><strong>Abstract:</strong> Description of the ongoing project's goals, current status, and expected contributions upon completion.</p> -->
     </article>

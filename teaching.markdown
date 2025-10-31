@@ -12,8 +12,12 @@ permalink: /teaching/
   </p>
 </section>
 
-<ul class="link-list">
-  <li><a href="https://www.dropbox.com/s/placeholder/teaching-syllabus.pdf?dl=0" target="_blank" rel="noopener">Course Syllabus</a></li>
-  <li><a href="https://www.dropbox.com/s/placeholder/teaching-lecture-notes.pdf?dl=0" target="_blank" rel="noopener">Lecture Notes</a></li>
-  <li><a href="https://www.dropbox.com/s/placeholder/teaching-assignments.zip?dl=0" target="_blank" rel="noopener">Assignments Pack</a></li>
-</ul>
+<section class="section">
+  <h2>Introduction to Data Science and Econometrics</h2>
+  <ul class="link-list">
+    <li><a href="https://www.dropbox.com/s/placeholder/teaching-syllabus.pdf?dl=0" target="_blank" rel="noopener">Course Syllabus</a></li>
+    <li><a href="https://www.dropbox.com/s/placeholder/teaching-lecture-notes.pdf?dl=0" target="_blank" rel="noopener">Lecture Notes</a></li>
+    <li><a href="https://www.dropbox.com/s/placeholder/teaching-assignments.zip?dl=0" target="_blank" rel="noopener">Assignments Pack</a></li>
+  </ul>
+</section>
+
