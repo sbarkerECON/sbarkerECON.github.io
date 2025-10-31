@@ -7,13 +7,34 @@ permalink: /research/
 <section class="section">
   <h1>Research</h1>
   <p>
-  Summary of page
+    Explore my current research portfolio, including completed working papers and projects that are actively in development.
   </p>
 </section>
 
-<!-- Research Links List -->
-<ul class="link-list"> 
-  <li><a href="https://www.dropbox.com/s/placeholder/research-paper-1.pdf?dl=0" target="_blank" rel="noopener">Working Paper: Market Dynamics</a></li> 
-  <li><a href="https://www.dropbox.com/s/placeholder/research-paper-2.pdf?dl=0" target="_blank" rel="noopener">Published Article: Policy Analysis</a></li> 
-  <li><a href="https://www.dropbox.com/s/placeholder/research-dataset.xlsx?dl=0" target="_blank" rel="noopener">Dataset: Supporting Materials</a></li> 
-</ul> 
+<section class="section">
+  <h2>Working Papers</h2>
+  <div class="paper-list">
+    <article class="paper">
+      <h3>Title of Working Paper One</h3>
+      <p class="authors"><strong>Authors:</strong> First Author, Second Author</p>
+      <p class="abstract"><strong>Abstract:</strong> Brief summary of the paper's main findings and contributions. This paragraph can span multiple sentences to provide additional context.</p>
+    </article>
+
+    <article class="paper">
+      <h3>Title of Working Paper Two</h3>
+      <p class="authors"><strong>Authors:</strong> First Author, Second Author</p>
+      <p class="abstract"><strong>Abstract:</strong> Another short description outlining the objectives, methodology, and implications of the research.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Works in Progress</h2>
+  <div class="paper-list">
+    <article class="paper">
+      <h3>Title of Work in Progress</h3>
+      <p class="authors"><strong>Authors:</strong> First Author, Second Author</p>
+      <p class="abstract"><strong>Abstract:</strong> Description of the ongoing project's goals, current status, and expected contributions upon completion.</p>
+    </article>
+  </div>
+</section>
