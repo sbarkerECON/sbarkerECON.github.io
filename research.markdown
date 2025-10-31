@@ -15,15 +15,14 @@ permalink: /research/
   <h2>Working Papers</h2>
   <div class="paper-list">
     <article class="paper">
-      <h3>Title of Working Paper One</h3>
-      <p class="authors"><strong>Authors:</strong> First Author, Second Author</p>
-      <p class="abstract"><strong>Abstract:</strong> Brief summary of the paper's main findings and contributions. This paragraph can span multiple sentences to provide additional context.</p>
+      <h3>Teacher Quality in High School using Course Grades: A Dynamic Factor Model in Network Data (Job Market Paper)</h3>
+      <p class="authors"><strong>Authors:</strong> Samuel Barker </p>
+      <p class="abstract"><strong>Abstract:</strong> [] </p>
     </article>
-
     <article class="paper">
-      <h3>Title of Working Paper Two</h3>
-      <p class="authors"><strong>Authors:</strong> First Author, Second Author</p>
-      <p class="abstract"><strong>Abstract:</strong> Another short description outlining the objectives, methodology, and implications of the research.</p>
+      <h3> Lasting Effects: An Econometric Framework for Resilience </h3>
+      <p class="authors"><strong>Authors:</strong> Samuel Barker, Jane Cooley Fruehwirth, Valentin Verdier, Krista M. Perreira </p>
+      <p class="abstract"><strong>Abstract:</strong> [] </p>
     </article>
   </div>
 </section>
@@ -32,9 +31,15 @@ permalink: /research/
   <h2>Works in Progress</h2>
   <div class="paper-list">
     <article class="paper">
-      <h3>Title of Work in Progress</h3>
-      <p class="authors"><strong>Authors:</strong> First Author, Second Author</p>
-      <p class="abstract"><strong>Abstract:</strong> Description of the ongoing project's goals, current status, and expected contributions upon completion.</p>
+      <h3>The Effect of Parental Income and Out-of-Pocket Costs on College Major Choice</h3>
+      <p class="authors"><strong>Authors:</strong> Samuel Barker</p>
+      <!--<p class="abstract"><strong>Abstract:</strong> Description of the ongoing project's goals, current status, and expected contributions upon completion.</p> -->
+    </article>
+    <article class="paper">
+      <h3>Beliefs from High School Grades and College Attendance</h3>
+      <p class="authors"><strong>Authors:</strong> Samuel Barker</p>
+      <!--<p class="abstract"><strong>Abstract:</strong> Description of the ongoing project's goals, current status, and expected contributions upon completion.</p> -->
     </article>
   </div>
 </section>
+
