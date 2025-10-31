@@ -14,6 +14,7 @@ permalink: /teaching/
 
 <section class="section">
   <h2>Introduction to Data Science and Econometrics</h2>
+  <p class="authors"><strong>Summer 2023</strong> </p>
   <ul class="link-list">
     <li><a href="https://www.dropbox.com/s/placeholder/teaching-syllabus.pdf?dl=0" target="_blank" rel="noopener">Course Syllabus</a></li>
     <li><a href="https://www.dropbox.com/s/placeholder/teaching-lecture-notes.pdf?dl=0" target="_blank" rel="noopener">Lecture Notes</a></li>
