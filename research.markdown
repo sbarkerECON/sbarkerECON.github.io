@@ -52,11 +52,11 @@ permalink: /research/
       <p class="authors"><strong>Authors:</strong> Samuel Barker</p>
     </article>
     <article class="paper">
-      <h3>Teacher Turnover and Attrition During the Covid-19 Pandemic in North Carolina</h3>
+      <h3>High School Grades and College Attendance: The Role of Beliefs</h3>
       <p class="authors"><strong>Authors:</strong> Samuel Barker</p>
     </article>
     <article class="paper">
-      <h3>High School Grades and College Attendance: The Role of Beliefs</h3>
+      <h3>Teacher Turnover and Attrition During the Covid-19 Pandemic in North Carolina</h3>
       <p class="authors"><strong>Authors:</strong> Samuel Barker, Jane Cooley Fruehwirth, Shauna Cooper, Camille Goins, Cat Warner-Griffin</p>
     </article>
   </div>
