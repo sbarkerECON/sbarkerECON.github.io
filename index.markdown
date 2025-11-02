@@ -15,7 +15,7 @@ permalink: /
     measurement human capital in education data sets, and determinants of
     college attendance and major choice.
     </p>
-    <a class="button" href="https://www.dropbox.com/scl/fi/eg0a793a9i3zfht4yh85x/Barker_CV.pdf?rlkey=a4375ludnl1xxf5xtrbffz8bf&st=niyc8i3n&dl=0" target="_blank" rel="noopener">Download CV</a>
+    <a class="button" href="https://www.dropbox.com/scl/fi/7je45g318elvocelw1woo/Barker_CV.pdf?rlkey=31pdtr25jw6efgk8javl46etm&st=4wj4h4y5&dl=0" target="_blank" rel="noopener">Download CV</a>
   </div>
 </section>
 
