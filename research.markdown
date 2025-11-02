@@ -48,14 +48,16 @@ permalink: /research/
   <h2>Works in Progress</h2>
   <div class="paper-list">
     <article class="paper">
-      <h3>The Effect of Parental Income and Out-of-Pocket Costs on College Major Choice</h3>
+      <h3>Major Choice with the Promise of NC Promise</h3>
       <p class="authors"><strong>Authors:</strong> Samuel Barker</p>
-      <!--<p class="abstract"><strong>Abstract:</strong> Description of the ongoing project's goals, current status, and expected contributions upon completion.</p> -->
+    </article>
+    <article class="paper">
+      <h3>Teacher Turnover and Attrition During the Covid-19 Pandemic in North Carolina</h3>
+      <p class="authors"><strong>Authors:</strong> Samuel Barker</p>
     </article>
     <article class="paper">
       <h3>High School Grades and College Attendance: The Role of Beliefs</h3>
-      <p class="authors"><strong>Authors:</strong> Samuel Barker</p>
-      <!--<p class="abstract"><strong>Abstract:</strong> Description of the ongoing project's goals, current status, and expected contributions upon completion.</p> -->
+      <p class="authors"><strong>Authors:</strong> Samuel Barker, Jane Cooley Fruehwirth, Shauna Cooper, Camille Goins, Cat Warner-Griffin</p>
     </article>
   </div>
 </section>
