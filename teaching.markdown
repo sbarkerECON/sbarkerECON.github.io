@@ -7,8 +7,7 @@ permalink: /teaching/
 <section class="section">
   <h1>Teaching</h1>
   <p>
-    Course materials and syllabi are available through the Dropbox links below.
-    They include lecture notes, assignments, and other resources for students.
+  [Under construction!]
   </p>
 </section>
 
