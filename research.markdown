@@ -37,7 +37,7 @@ permalink: /research/
   <h2>Works in Progress</h2>
   <div class="paper-list">
     <article class="paper">
-      <h3>The Effect of Parental Income</h3>
+      <h3>The Effect of Parental Income and Out-of-Pocket Costs on Major Choice</h3>
       <p class="authors"><strong>Authors:</strong> Samuel Barker</p>
     </article>
     <article class="paper">
