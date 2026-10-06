@@ -15,7 +15,7 @@ permalink: /research/
   <h2>Working Papers</h2>
   <div class="paper-list">
     <article class="paper">
-      <h3>Measuring Human Capital and Teacher Value-Added with Transcript Grades: A Factor Model in Network Data (JMP)</h3>
+      <h3>Measuring Human Capital and Teacher Value-Added with Transcript Grades: A Factor Model in Network Data (Submitted)</h3>
       <p class="authors"><strong>Authors:</strong> Samuel Barker </p>
       <a class="button" href="https://www.dropbox.com/scl/fi/hzsiiv2xnxnwgxmzlfo13/barker_jmp.pdf?rlkey=raw69ah1q8jcz0rmznu8q45zj&amp;st=0ktjogxu&amp;dl=0" target="_blank" rel="noopener">Download JMP</a>
       <p class="abstract"><strong>Abstract:</strong>
